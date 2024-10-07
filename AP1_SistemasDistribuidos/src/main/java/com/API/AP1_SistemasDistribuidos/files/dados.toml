@@ -1,0 +1,4 @@
+nome = "Pedro"
+CPF = "123.456.789-00"
+idade = 21
+mensagem = "Olá, mundo!"
