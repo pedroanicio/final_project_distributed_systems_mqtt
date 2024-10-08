@@ -2,5 +2,5 @@
     <nome>Pedro</nome>
     <CPF>123.456.789-00</CPF>
     <idade>21</idade>
-    <mensagem>Olá, mundo!</mensagem>
+    <mensagem>Olá, XML!</mensagem>
 </dados>

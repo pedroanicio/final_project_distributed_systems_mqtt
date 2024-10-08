@@ -1,40 +1,143 @@
 package com.API.AP1_SistemasDistribuidos;
-
-import org.springframework.stereotype.Component;
-
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.net.ServerSocket;
+
 import java.net.Socket;
-
-@Component
 public class Servidor {
-    public final int PORT = 8000;
+    public static void main(String[] args) {
+        int port = 8080;
 
-    public void ServidorSocket(){
-        startServer();
-    }
+        try (ServerSocket serverSocket = new ServerSocket(port)) {
+            System.out.println("Servidor escutando na porta " + port);
 
-    public void startServer(){
-        try (ServerSocket serverSocket = new ServerSocket(PORT)){
-            System.out.printf("Servidor iniciado! ");
+            while (true) {
+                // Aceita a conexão do cliente
+                Socket socket = serverSocket.accept();
 
-            while (true){
-                Socket clientSocket = serverSocket.accept();
-                System.out.println("Cliente conectado: "+ clientSocket.getInetAddress().getHostAddress());
+                try (BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+                     BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()))) {
 
-                BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
-                String line;
-                StringBuilder dadosRecebidos = new StringBuilder();
+                    String line;
+                    while ((line = reader.readLine()) != null) {
+                        StringBuilder fileContent = new StringBuilder();
+                        String fileName = line;  // Nome do arquivo para identificar o formato
+                        System.out.println("Arquivo recebido: " + fileName);
 
-                while ((line = in.readLine()) != null){
-                    dadosRecebidos.append(line).append("\n");
+                        while ((line = reader.readLine()) != null && !line.equals("END")) {
+                            fileContent.append(line).append("\n");
+                        }
+
+                        System.out.println("Conteúdo:\n" + fileContent.toString());
+
+                        // Lógica para desserializar de acordo com o formato
+                        if (fileName.endsWith(".json")) {
+                            writer.write("Arquivo JSON recebido\n");
+                            String jsonContent = fileContent.toString().trim();
+                            String[] pairs = jsonContent.replace("{", "").replace("}", "").split(",\\s*");
+                            for (String pair : pairs) {
+                                String[] keyValue = pair.split(":");
+                                if (keyValue.length == 2) {
+                                    String key = keyValue[0].trim().replace("\"", ""); // Remove as aspas
+                                    String value = keyValue[1].trim().replace("\"", ""); // Remove as aspas
+                                    // Exibe com a primeira letra maiúscula
+                                    String formattedKey = key.substring(0, 1).toUpperCase() + key.substring(1);
+                                    writer.write(formattedKey + ": " + value + "\n");
+                                }
+                            }
+                            writer.write("\n");
+                        } else if (fileName.endsWith(".csv")) {
+                            writer.write("Arquivo CSV recebido\n");
+
+                            // Formata a saída do CSV
+                            String csvContent = fileContent.toString().trim();
+                            String[] lines = csvContent.split("\n");
+
+                            if (lines.length > 0) {
+                                // Processa a primeira linha (cabeçalho) para obter as chaves
+                                String[] headers = lines[0].split(",");
+
+                                // Processa a segunda linha (dados)
+                                if (lines.length > 1) {
+                                    String[] values = lines[1].split(",");
+                                    for (int i = 0; i < headers.length; i++) {
+                                        String key = headers[i].trim(); // A chave do cabeçalho
+                                        String value = values[i].trim().replace("\"", ""); // O valor correspondente, removendo as aspas
+                                        // Exibe com a primeira letra maiúscula
+                                        String formattedKey = key.substring(0, 1).toUpperCase() + key.substring(1);
+                                        writer.write(formattedKey + ": " + value + "\n");
+                                    }
+                                }
+                            }
+
+                            writer.write("\n");
+                        } else if (fileName.endsWith(".xml")) {
+                            writer.write("Arquivo XML recebido\n");
+
+                            // Formata a saída do XML
+                            String xmlContent = fileContent.toString().trim();
+                            // Remove a tag <dados> e </dados> do início e fim
+                            xmlContent = xmlContent.replaceFirst("<dados>", "").replaceFirst("</dados>", "").trim();
+                            String[] lines = xmlContent.split("\n");
+                            for (String xmlLine : lines) {
+                                if (xmlLine.contains(">")) {
+                                    String key = xmlLine.substring(xmlLine.indexOf("<") + 1, xmlLine.indexOf(">")).trim(); // A chave entre as tags
+                                    String value = xmlLine.substring(xmlLine.indexOf(">") + 1, xmlLine.lastIndexOf("<")).trim(); // O valor entre as tags
+                                    // Exibe com a primeira letra maiúscula
+                                    String formattedKey = key.substring(0, 1).toUpperCase() + key.substring(1);
+                                    writer.write(formattedKey + ": " + value + "\n");
+                                }
+                            }
+                            writer.write("\n");
+                        } else if (fileName.endsWith(".yaml") || fileName.endsWith(".yml")) {
+                            writer.write("Arquivo YAML recebido\n");
+
+                            // Formata a saída do YAML
+                            String yamlContent = fileContent.toString().trim();
+                            String[] lines = yamlContent.split("\n");
+                            for (String yamlLine : lines) {
+                                if (yamlLine.contains(":")) {
+                                    String[] keyValue = yamlLine.split(":");
+                                    String key = keyValue[0].trim(); // A chave antes dos dois pontos
+                                    String value = keyValue[1].trim().replace("\"", ""); // O valor após os dois pontos
+                                    // Exibe com a primeira letra maiúscula
+                                    String formattedKey = key.substring(0, 1).toUpperCase() + key.substring(1);
+                                    writer.write(formattedKey + ": " + value + "\n");
+                                }
+                            }
+                            writer.write("\n");
+                        } else if (fileName.endsWith(".toml")) {
+                            writer.write("Arquivo TOML recebido\n");
+
+                            // Formata a saída do TOML
+                            String tomlContent = fileContent.toString().trim();
+                            String[] lines = tomlContent.split("\n");
+                            for (String tomlLine : lines) {
+                                if (tomlLine.contains("=")) {
+                                    String[] keyValue = tomlLine.split("=");
+                                    String key = keyValue[0].trim(); // A chave antes do igual
+                                    String value = keyValue[1].trim().replace("\"", ""); // O valor após o igual
+                                    // Exibe com a primeira letra maiúscula
+                                    String formattedKey = key.substring(0, 1).toUpperCase() + key.substring(1);
+                                    writer.write(formattedKey + ": " + value + "\n");
+                                }
+                            }
+                        } else {
+                            writer.write("Formato de arquivo não suportado: " + fileName + "\n");
+                        }
+
+                        writer.write("END\n");
+                        writer.flush();  // Envia a resposta de volta ao cliente
+                    }
+
+                } catch (IOException e) {
+                    e.printStackTrace();
+                } finally {
+                    // Fecha o socket após o processamento completo
+                    socket.close();
                 }
-
             }
-
-        }catch (Exception e) {
-            System.out.println("Erro: " + e.getMessage());
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 }
