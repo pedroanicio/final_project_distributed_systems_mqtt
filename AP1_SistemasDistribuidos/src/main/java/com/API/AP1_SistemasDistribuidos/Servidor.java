@@ -33,9 +33,9 @@ public class Servidor {
                         if (fileName.endsWith(".json")) {
                             writer.write("Arquivo JSON recebido\n");
                             String jsonContent = fileContent.toString().trim();
-                            String[] pairs = jsonContent.replace("{", "").replace("}", "").split(",\\s*");
+                            String[] pairs = jsonContent.replace("{", "").replace("}", "").split(",\\s*"); // Separa os pares chave-valor pela vírgula
                             for (String pair : pairs) {
-                                String[] keyValue = pair.split(":");
+                                String[] keyValue = pair.split(":"); // Separa a chave do valor pelo dois pontos
                                 if (keyValue.length == 2) {
                                     String key = keyValue[0].trim().replace("\"", ""); // Remove as aspas
                                     String value = keyValue[1].trim().replace("\"", ""); // Remove as aspas
