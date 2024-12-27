@@ -1,9 +1,13 @@
 package com.API.AP1_SistemasDistribuidos;
+
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import java.io.*;
 import java.net.ServerSocket;
 
 import java.net.Socket;
-public class Servidor {
+public class ServidorNew {
     public static void main(String[] args) {
         int port = 8080;
 
@@ -32,19 +36,17 @@ public class Servidor {
                         // Lógica para desserializar de acordo com o formato
                         if (fileName.endsWith(".json")) {
                             writer.write("Arquivo JSON recebido\n");
-                            String jsonContent = fileContent.toString().trim();
-                            String[] pairs = jsonContent.replace("{", "").replace("}", "").split(",\\s*"); // Separa os pares chave-valor pela vírgula
-                            for (String pair : pairs) {
-                                String[] keyValue = pair.split(":"); // Separa a chave do valor pelo dois pontos
-                                if (keyValue.length == 2) {
-                                    String key = keyValue[0].trim().replace("\"", ""); // Remove as aspas
-                                    String value = keyValue[1].trim().replace("\"", ""); // Remove as aspas
-                                    // Exibe com a primeira letra maiúscula
-                                    String formattedKey = key.substring(0, 1).toUpperCase() + key.substring(1);
-                                    writer.write(formattedKey + ": " + value + "\n");
-                                }
-                            }
-                            writer.write("\n");
+
+                            ObjectMapper objectMapper = new ObjectMapper();
+                            Dados dados = objectMapper.readValue(fileContent.toString(), Dados.class);
+
+                            //writer.write(dados.toString() + "\n");
+                            writer.write("Nome: " + dados.getNome() + "\n");
+                            writer.write("CPF: " + dados.getCpf() + "\n");
+                            writer.write("Idade: " + dados.getIdade() + "\n");
+                            writer.write("Mensagem: " + dados.getMensagem() + "\n");
+                            writer.flush();
+
                         } else if (fileName.endsWith(".csv")) {
                             writer.write("Arquivo CSV recebido\n");
 

@@ -18,7 +18,7 @@ public class Cliente {
 
             for (String fileName : fileNames) {
                 // Lê o conteúdo do arquivo
-                String fileContent = new String(Files.readAllBytes(Paths.get("/home/pedro/DEV/Intelij/SistemasDistribuidos/AP1_SistemasDistribuidos/src/main/java/com/API/AP1_SistemasDistribuidos/files/" + fileName)));
+                String fileContent = new String(Files.readAllBytes(Paths.get("src/main/java/com/API/AP1_SistemasDistribuidos/files/" + fileName)));
 
                 // Envia o nome do arquivo para identificar o formato
                 writer.write(fileName + "\n");
