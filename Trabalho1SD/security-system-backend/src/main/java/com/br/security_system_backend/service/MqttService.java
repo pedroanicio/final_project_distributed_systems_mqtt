@@ -14,9 +14,17 @@ public class MqttService {
     }
 
     public void sendCommand(String topic, String payload) {
-        mqttOutboundChannel.send(MessageBuilder.withPayload(payload)
-                .setHeader("mqtt_topic", topic)
-                .build());
+        try {
+            // Log para debug
+            System.out.println("Sending MQTT message: " + topic + " -> " + payload);
+            mqttOutboundChannel.send(MessageBuilder.withPayload(payload)
+                    .setHeader("mqtt_topic", topic)
+                    .build());
+        } catch (Exception e) {
+            // Trate erros para evitar loops
+            System.err.println("Failed to send MQTT command: " + e.getMessage());
+        }
     }
+
 }
 

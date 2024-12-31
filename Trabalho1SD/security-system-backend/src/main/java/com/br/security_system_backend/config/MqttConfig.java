@@ -50,7 +50,12 @@ public class MqttConfig {
             String topic = message.getHeaders().get("mqtt_receivedTopic").toString();
             String payload = message.getPayload().toString();
 
-            // Salve o evento no Cassandra
+            // Ignorar mensagens originadas pelo próprio serviço
+            if (payload.contains("\"origin\":\"middleware\"")) {
+                System.out.println("Ignoring self-published message.");
+                return;
+            }
+
             String[] topicParts = topic.split("/");
             if (topicParts.length > 1 && "sensor".equals(topicParts[0])) {
                 sensorEventService.saveEvent(topicParts[1], "event", payload);
@@ -59,6 +64,7 @@ public class MqttConfig {
             System.out.println("Received from topic [" + topic + "]: " + payload);
         };
     }
+
 
     @Bean
     @ServiceActivator(inputChannel = "mqttOutboundChannel")

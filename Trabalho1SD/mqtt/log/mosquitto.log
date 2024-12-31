@@ -18,3 +18,117 @@
 1735607562: New connection from 172.19.0.1:38244 on port 1883.
 1735607562: New client connected from 172.19.0.1:38244 as auto-1C07274D-FA99-E0CF-B8F8-94C27E27F8CD (p2, c1, k60).
 1735607562: Client auto-1C07274D-FA99-E0CF-B8F8-94C27E27F8CD disconnected.
+1735608551: Client middleware-subscriber disconnected.
+1735608556: Client middleware-publisher closed its connection.
+1735608889: New connection from 172.19.0.1:53494 on port 1883.
+1735608889: New client connected from 172.19.0.1:53494 as middleware-subscriber (p2, c1, k60).
+1735608956: New connection from 172.19.0.1:49804 on port 1883.
+1735608956: New client connected from 172.19.0.1:49804 as middleware-publisher (p2, c1, k60).
+1735609004: Client middleware-subscriber disconnected.
+1735609009: Client middleware-publisher disconnected.
+1735609289: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1735609359: New connection from 172.19.0.1:51530 on port 1883.
+1735609359: New client connected from 172.19.0.1:51530 as middleware-subscriber (p2, c1, k60).
+1735609366: New connection from 172.19.0.1:51536 on port 1883.
+1735609366: New client connected from 172.19.0.1:51536 as middleware-publisher (p2, c1, k60).
+1735609375: Client middleware-subscriber disconnected.
+1735609380: Client middleware-publisher disconnected.
+1735609423: New connection from 172.19.0.1:44968 on port 1883.
+1735609424: New client connected from 172.19.0.1:44968 as middleware-subscriber (p2, c1, k60).
+1735609441: New connection from 172.19.0.1:54462 on port 1883.
+1735609441: New client connected from 172.19.0.1:54462 as middleware-publisher (p2, c1, k60).
+1735609811: Client middleware-subscriber disconnected.
+1735609816: Client middleware-publisher closed its connection.
+1735610174: New connection from 172.19.0.1:59126 on port 1883.
+1735610175: New client connected from 172.19.0.1:59126 as middleware-subscriber (p2, c1, k60).
+1735610179: New connection from 172.19.0.1:43208 on port 1883.
+1735610179: New client connected from 172.19.0.1:43208 as middleware-publisher (p2, c1, k60).
+1735610184: Client middleware-subscriber disconnected.
+1735610189: Client middleware-publisher disconnected.
+1735611090: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1735612567: New connection from 172.19.0.1:54044 on port 1883.
+1735612567: New client connected from 172.19.0.1:54044 as middleware-subscriber (p2, c1, k60).
+1735612675: Client middleware-subscriber disconnected.
+1735612691: New connection from 172.19.0.1:39852 on port 1883.
+1735612691: New client connected from 172.19.0.1:39852 as middleware-subscriber (p2, c1, k60).
+1735612751: Client middleware-subscriber disconnected.
+1735612793: New connection from 172.19.0.1:50804 on port 1883.
+1735612793: New client connected from 172.19.0.1:50804 as middleware-subscriber (p2, c1, k60).
+1735612857: Client middleware-subscriber disconnected.
+1735612871: New connection from 172.19.0.1:59090 on port 1883.
+1735612871: New client connected from 172.19.0.1:59090 as middleware-subscriber (p2, c1, k60).
+1735612874: New connection from 172.19.0.1:59106 on port 1883.
+1735612874: New client connected from 172.19.0.1:59106 as middleware-publisher (p2, c1, k60).
+1735612891: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1735612940: Client middleware-subscriber disconnected.
+1735612945: Client middleware-publisher disconnected.
+1735612953: New connection from 172.19.0.1:35184 on port 1883.
+1735612954: New client connected from 172.19.0.1:35184 as middleware-subscriber (p2, c1, k60).
+1735613173: New connection from 172.19.0.1:33166 on port 1883.
+1735613173: New client connected from 172.19.0.1:33166 as middleware-publisher (p2, c1, k60).
+1735613175: Client middleware-subscriber disconnected.
+1735613180: Client middleware-publisher disconnected.
+1735613430: New connection from 172.19.0.1:52678 on port 1883.
+1735613430: New client connected from 172.19.0.1:52678 as middleware-subscriber (p2, c1, k60).
+1735613434: New connection from 172.19.0.1:52680 on port 1883.
+1735613434: New client connected from 172.19.0.1:52680 as middleware-publisher (p2, c1, k60).
+1735613437: Client middleware-subscriber disconnected.
+1735613442: Client middleware-publisher disconnected.
+1735613460: New connection from 172.19.0.1:37188 on port 1883.
+1735613461: New client connected from 172.19.0.1:37188 as middleware-subscriber (p2, c1, k60).
+1735613463: New connection from 172.19.0.1:37196 on port 1883.
+1735613463: New client connected from 172.19.0.1:37196 as middleware-publisher (p2, c1, k60).
+1735613530: Client middleware-subscriber disconnected.
+1735613535: Client middleware-publisher disconnected.
+1735613543: New connection from 172.19.0.1:46780 on port 1883.
+1735613544: New client connected from 172.19.0.1:46780 as middleware-subscriber (p2, c1, k60).
+1735613546: New connection from 172.19.0.1:46792 on port 1883.
+1735613546: New client connected from 172.19.0.1:46792 as middleware-publisher (p2, c1, k60).
+1735613805: Client middleware-subscriber disconnected.
+1735613810: Client middleware-publisher disconnected.
+1735613818: New connection from 172.19.0.1:36304 on port 1883.
+1735613819: New client connected from 172.19.0.1:36304 as middleware-subscriber (p2, c1, k60).
+1735613826: New connection from 172.19.0.1:43022 on port 1883.
+1735613827: New client connected from 172.19.0.1:43022 as middleware-publisher (p2, c1, k60).
+1735613829: Client middleware-subscriber disconnected.
+1735613834: Client middleware-publisher disconnected.
+1735613857: New connection from 172.19.0.1:36016 on port 1883.
+1735613858: New client connected from 172.19.0.1:36016 as middleware-subscriber (p2, c1, k60).
+1735613860: New connection from 172.19.0.1:36922 on port 1883.
+1735613860: New client connected from 172.19.0.1:36922 as middleware-publisher (p2, c1, k60).
+1735613861: Client middleware-subscriber disconnected.
+1735613866: Client middleware-publisher disconnected.
+1735613998: New connection from 172.19.0.1:45536 on port 1883.
+1735613999: New client connected from 172.19.0.1:45536 as middleware-subscriber (p2, c1, k60).
+1735614010: New connection from 172.19.0.1:49298 on port 1883.
+1735614010: New client connected from 172.19.0.1:49298 as middleware-publisher (p2, c1, k60).
+1735614100: New connection from 172.19.0.1:47942 on port 1883.
+1735614100: New client connected from 172.19.0.1:47942 as auto-F6E5B1C9-4D8D-C12E-2603-C202122354FD (p2, c1, k60).
+1735614100: Client auto-F6E5B1C9-4D8D-C12E-2603-C202122354FD disconnected.
+1735614120: New connection from 172.19.0.1:58860 on port 1883.
+1735614120: New client connected from 172.19.0.1:58860 as auto-268C3DA0-75D4-FCDB-C94B-ACCE1E2D58BE (p2, c1, k60).
+1735614132: New connection from 172.19.0.1:50736 on port 1883.
+1735614132: New client connected from 172.19.0.1:50736 as auto-797E5D05-D8AF-4B08-5CFB-1055C3A6DF44 (p2, c1, k60).
+1735614132: Client auto-797E5D05-D8AF-4B08-5CFB-1055C3A6DF44 disconnected.
+1735614170: Client middleware-subscriber disconnected.
+1735614175: Client middleware-publisher disconnected.
+1735614184: New connection from 172.19.0.1:37694 on port 1883.
+1735614184: New client connected from 172.19.0.1:37694 as middleware-subscriber (p2, c1, k60).
+1735614195: New connection from 172.19.0.1:38642 on port 1883.
+1735614195: New client connected from 172.19.0.1:38642 as auto-B204F094-1F06-8497-28C9-791295694A7E (p2, c1, k60).
+1735614195: Client auto-B204F094-1F06-8497-28C9-791295694A7E disconnected.
+1735614196: New connection from 172.19.0.1:38648 on port 1883.
+1735614196: New client connected from 172.19.0.1:38648 as middleware-publisher (p2, c1, k60).
+1735614230: Client middleware-subscriber disconnected.
+1735614235: Client middleware-publisher disconnected.
+1735614275: Client auto-268C3DA0-75D4-FCDB-C94B-ACCE1E2D58BE has exceeded timeout, disconnecting.
+1735614692: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1735615026: New connection from 172.19.0.1:48330 on port 1883.
+1735615026: New client connected from 172.19.0.1:48330 as middleware-subscriber (p2, c1, k60).
+1735615033: New connection from 172.19.0.1:48224 on port 1883.
+1735615034: New client connected from 172.19.0.1:48224 as middleware-publisher (p2, c1, k60).
+1735615458: Client middleware-subscriber disconnected.
+1735615463: Client middleware-publisher disconnected.
+1735615767: New connection from 172.19.0.1:52502 on port 1883.
+1735615767: New client connected from 172.19.0.1:52502 as middleware-subscriber (p2, c1, k60).
+1735615848: Client middleware-subscriber disconnected.
