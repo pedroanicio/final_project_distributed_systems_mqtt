@@ -52,7 +52,7 @@ public class MqttConfig {
 
             // Ignorar mensagens originadas pelo próprio serviço
             if (payload.contains("\"origin\":\"middleware\"")) {
-                System.out.println("Ignoring self-published message.");
+                //System.out.println("Ignoring self-published message.");
                 return;
             }
 

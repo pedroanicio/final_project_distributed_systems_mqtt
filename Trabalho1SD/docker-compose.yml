@@ -20,6 +20,6 @@ services:
       - CASSANDRA_CLUSTER_NAME=SecurityCluster
       - CASSANDRA_NUM_TOKENS=256
     volumes:
-      - cassandra_data:/var/lib/cassandra
+      - ./cassandra:/var/lib/cassandra
 volumes:
   cassandra_data:
