@@ -25,6 +25,10 @@ public class ActuatorCommand {
     @Column("parameters")
     private String parameters;
 
+    public ActuatorCommand() {
+
+    }
+
     public UUID getId() {
         return id;
     }
