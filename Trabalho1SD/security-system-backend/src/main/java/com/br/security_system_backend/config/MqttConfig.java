@@ -20,7 +20,8 @@ public class MqttConfig {
     public MqttPahoClientFactory mqttClientFactory() {
         DefaultMqttPahoClientFactory factory = new DefaultMqttPahoClientFactory();
         MqttConnectOptions options = new MqttConnectOptions();
-        options.setServerURIs(new String[]{"tcp://127.0.0.1:1883"});
+        options.setServerURIs(new String[]{"tcp://mqtt:1883"});
+        //tcp://127.0.0.1:1883
         options.setAutomaticReconnect(true);
         options.setConnectionTimeout(10);
         factory.setConnectionOptions(options);
@@ -58,7 +59,7 @@ public class MqttConfig {
 
             String[] topicParts = topic.split("/");
             if (topicParts.length > 1 && "sensor".equals(topicParts[0])) {
-                sensorEventService.saveEvent(topicParts[1], "event", payload);
+                sensorEventService.saveEvent(topicParts[1], topicParts[2], payload);
             }
 
             System.out.println("Received from topic [" + topic + "]: " + payload);
@@ -70,9 +71,13 @@ public class MqttConfig {
     @ServiceActivator(inputChannel = "mqttOutboundChannel")
     public MessageHandler mqttOutboundHandler(MqttPahoClientFactory mqttClientFactory) {
         MqttPahoMessageHandler handler = new MqttPahoMessageHandler("middleware-publisher", mqttClientFactory);
+        handler.setAsync(true); // Envio assíncrono para melhorar desempenho
         handler.setDefaultTopic("actuator/commands");
+        handler.setCompletionTimeout(5000); // Timeout para envio
+        handler.setDefaultQos(1); // QOS 1 (entregar pelo menos uma vez)
         return handler;
     }
+
 
     @Bean
     public MessageChannel mqttOutboundChannel() {

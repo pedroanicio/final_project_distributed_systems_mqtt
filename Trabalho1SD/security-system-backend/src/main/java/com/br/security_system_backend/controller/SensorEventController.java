@@ -2,7 +2,6 @@ package com.br.security_system_backend.controller;
 
 import com.br.security_system_backend.model.SensorEvent;
 import com.br.security_system_backend.service.SensorEventService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
