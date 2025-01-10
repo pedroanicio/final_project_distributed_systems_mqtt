@@ -35,8 +35,9 @@ public class MqttConfig {
 
     @Bean
     public MqttPahoMessageDrivenChannelAdapter inboundAdapter(MqttPahoClientFactory mqttClientFactory) {
+        String uniqueClientId = "middleware-subscriber-" + System.nanoTime();
         MqttPahoMessageDrivenChannelAdapter adapter = new MqttPahoMessageDrivenChannelAdapter(
-                "middleware-subscriber",
+                uniqueClientId,
                 mqttClientFactory,
                 "sensor/#"
         );
@@ -70,7 +71,8 @@ public class MqttConfig {
     @Bean
     @ServiceActivator(inputChannel = "mqttOutboundChannel")
     public MessageHandler mqttOutboundHandler(MqttPahoClientFactory mqttClientFactory) {
-        MqttPahoMessageHandler handler = new MqttPahoMessageHandler("middleware-publisher", mqttClientFactory);
+        String uniqueClientId = "middleware-publisher-" + System.nanoTime();
+        MqttPahoMessageHandler handler = new MqttPahoMessageHandler(uniqueClientId, mqttClientFactory);
         handler.setAsync(true); // Envio assíncrono para melhorar desempenho
         handler.setDefaultTopic("actuator/commands");
         handler.setCompletionTimeout(5000); // Timeout para envio

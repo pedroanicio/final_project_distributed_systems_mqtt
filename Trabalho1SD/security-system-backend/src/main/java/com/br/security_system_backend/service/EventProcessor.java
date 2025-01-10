@@ -14,6 +14,11 @@ public class EventProcessor {
     public void processSensorEvent(String sensorId, String eventType, String value) {
         if (eventType.equals("motion") && value.equalsIgnoreCase("detected")) {
             actuatorCommandService.sendCommand("door_actuator", "lock", "");
+            actuatorCommandService.sendCommand("alarm_actuator", "ON", "");
+        }
+
+        if(eventType.equals("noisy") && value.equalsIgnoreCase("tooLoud")){
+            actuatorCommandService.sendCommand("test", "", "");
         }
 
         if (eventType.equals("smoke") && value.equalsIgnoreCase("detected")) {

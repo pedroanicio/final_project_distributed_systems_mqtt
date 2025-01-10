@@ -26,7 +26,13 @@ services:
       - ./cassandra:/var/lib/cassandra
     networks:
       - app-network
-
+    healthcheck:
+      test: ["CMD-SHELL", "cqlsh -e 'describe keyspaces'"]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+      start_period: 0s
+    
   controller:
     image: pedroaniciodev/security-system-backend
     build:
@@ -39,10 +45,12 @@ services:
       - MQTT_BROKER_URL=tcp://mqtt:1883
       - CASSANDRA_HOST=cassandra
     depends_on:
-      - mqtt
-      - cassandra
+      mqtt:
+        condition: service_started
+      cassandra:
+        condition: service_healthy
     deploy:
-      replicas: 1 # instancias do controller
+      replicas: 2 # instancias do controller
       restart_policy:
         condition: on-failure
     networks:

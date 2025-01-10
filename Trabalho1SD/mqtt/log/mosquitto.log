@@ -1114,3 +1114,1232 @@
 1736379547: Client middleware-publisher disconnected.
 1736379551: mosquitto version 2.0.20 terminating
 1736379551: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1736462264: mosquitto version 2.0.20 starting
+1736462264: Config loaded from /mosquitto/config/mosquitto.conf.
+1736462264: Opening ipv4 listen socket on port 1883.
+1736462264: Opening ipv6 listen socket on port 1883.
+1736462264: mosquitto version 2.0.20 running
+1736462343: New connection from 172.19.0.4:35238 on port 1883.
+1736462343: New connection from 172.19.0.5:33172 on port 1883.
+1736462343: New client connected from 172.19.0.4:35238 as middleware-subscriber (p2, c1, k60).
+1736462343: Client middleware-subscriber already connected, closing old connection.
+1736462343: New client connected from 172.19.0.5:33172 as middleware-subscriber (p2, c1, k60).
+1736462344: New connection from 172.19.0.4:35248 on port 1883.
+1736462344: Client middleware-subscriber already connected, closing old connection.
+1736462344: New client connected from 172.19.0.4:35248 as middleware-subscriber (p2, c1, k60).
+1736462345: New connection from 172.19.0.5:33188 on port 1883.
+1736462346: Client middleware-subscriber already connected, closing old connection.
+1736462346: New client connected from 172.19.0.5:33188 as middleware-subscriber (p2, c1, k60).
+1736462347: New connection from 172.19.0.4:43404 on port 1883.
+1736462347: Client middleware-subscriber already connected, closing old connection.
+1736462347: New client connected from 172.19.0.4:43404 as middleware-subscriber (p2, c1, k60).
+1736462348: New connection from 172.19.0.5:57562 on port 1883.
+1736462348: Client middleware-subscriber already connected, closing old connection.
+1736462348: New client connected from 172.19.0.5:57562 as middleware-subscriber (p2, c1, k60).
+1736462349: New connection from 172.19.0.4:43412 on port 1883.
+1736462350: Client middleware-subscriber already connected, closing old connection.
+1736462350: New client connected from 172.19.0.4:43412 as middleware-subscriber (p2, c1, k60).
+1736462351: New connection from 172.19.0.5:57572 on port 1883.
+1736462351: Client middleware-subscriber already connected, closing old connection.
+1736462351: New client connected from 172.19.0.5:57572 as middleware-subscriber (p2, c1, k60).
+1736462352: New connection from 172.19.0.4:43422 on port 1883.
+1736462352: Client middleware-subscriber already connected, closing old connection.
+1736462352: New client connected from 172.19.0.4:43422 as middleware-subscriber (p2, c1, k60).
+1736462353: New connection from 172.19.0.5:57586 on port 1883.
+1736462354: Client middleware-subscriber already connected, closing old connection.
+1736462354: New client connected from 172.19.0.5:57586 as middleware-subscriber (p2, c1, k60).
+1736462355: New connection from 172.19.0.4:43432 on port 1883.
+1736462355: Client middleware-subscriber already connected, closing old connection.
+1736462355: New client connected from 172.19.0.4:43432 as middleware-subscriber (p2, c1, k60).
+1736462356: New connection from 172.19.0.5:57592 on port 1883.
+1736462356: Client middleware-subscriber already connected, closing old connection.
+1736462356: New client connected from 172.19.0.5:57592 as middleware-subscriber (p2, c1, k60).
+1736462357: New connection from 172.19.0.4:45326 on port 1883.
+1736462358: Client middleware-subscriber already connected, closing old connection.
+1736462358: New client connected from 172.19.0.4:45326 as middleware-subscriber (p2, c1, k60).
+1736462359: New connection from 172.19.0.5:59908 on port 1883.
+1736462359: Client middleware-subscriber already connected, closing old connection.
+1736462359: New client connected from 172.19.0.5:59908 as middleware-subscriber (p2, c1, k60).
+1736462360: New connection from 172.19.0.4:45340 on port 1883.
+1736462360: Client middleware-subscriber already connected, closing old connection.
+1736462360: New client connected from 172.19.0.4:45340 as middleware-subscriber (p2, c1, k60).
+1736462361: New connection from 172.19.0.5:59916 on port 1883.
+1736462361: Client middleware-subscriber already connected, closing old connection.
+1736462361: New client connected from 172.19.0.5:59916 as middleware-subscriber (p2, c1, k60).
+1736462362: New connection from 172.19.0.4:45348 on port 1883.
+1736462363: Client middleware-subscriber already connected, closing old connection.
+1736462363: New client connected from 172.19.0.4:45348 as middleware-subscriber (p2, c1, k60).
+1736462364: New connection from 172.19.0.5:59918 on port 1883.
+1736462364: Client middleware-subscriber already connected, closing old connection.
+1736462364: New client connected from 172.19.0.5:59918 as middleware-subscriber (p2, c1, k60).
+1736462365: New connection from 172.19.0.4:45360 on port 1883.
+1736462365: Client middleware-subscriber already connected, closing old connection.
+1736462365: New client connected from 172.19.0.4:45360 as middleware-subscriber (p2, c1, k60).
+1736462366: New connection from 172.19.0.5:49748 on port 1883.
+1736462367: Client middleware-subscriber already connected, closing old connection.
+1736462367: New client connected from 172.19.0.5:49748 as middleware-subscriber (p2, c1, k60).
+1736462368: New connection from 172.19.0.4:57580 on port 1883.
+1736462368: Client middleware-subscriber already connected, closing old connection.
+1736462368: New client connected from 172.19.0.4:57580 as middleware-subscriber (p2, c1, k60).
+1736462369: New connection from 172.19.0.5:49764 on port 1883.
+1736462369: Client middleware-subscriber already connected, closing old connection.
+1736462369: New client connected from 172.19.0.5:49764 as middleware-subscriber (p2, c1, k60).
+1736462370: New connection from 172.19.0.4:57590 on port 1883.
+1736462371: Client middleware-subscriber already connected, closing old connection.
+1736462371: New client connected from 172.19.0.4:57590 as middleware-subscriber (p2, c1, k60).
+1736462371: New connection from 172.19.0.1:41654 on port 1883.
+1736462371: New client connected from 172.19.0.1:41654 as auto-4AD2F5B6-8CC6-E9DF-2967-B09E5DB25618 (p2, c1, k60).
+1736462371: Client auto-4AD2F5B6-8CC6-E9DF-2967-B09E5DB25618 disconnected.
+1736462371: New connection from 172.19.0.4:57606 on port 1883.
+1736462371: New client connected from 172.19.0.4:57606 as middleware-publisher (p2, c1, k60).
+1736462372: New connection from 172.19.0.5:49766 on port 1883.
+1736462372: Client middleware-subscriber already connected, closing old connection.
+1736462372: New client connected from 172.19.0.5:49766 as middleware-subscriber (p2, c1, k60).
+1736462373: New connection from 172.19.0.4:57610 on port 1883.
+1736462373: Client middleware-subscriber already connected, closing old connection.
+1736462373: New client connected from 172.19.0.4:57610 as middleware-subscriber (p2, c1, k60).
+1736462374: New connection from 172.19.0.5:49774 on port 1883.
+1736462375: Client middleware-subscriber already connected, closing old connection.
+1736462375: New client connected from 172.19.0.5:49774 as middleware-subscriber (p2, c1, k60).
+1736462376: New connection from 172.19.0.4:57626 on port 1883.
+1736462376: Client middleware-subscriber already connected, closing old connection.
+1736462376: New client connected from 172.19.0.4:57626 as middleware-subscriber (p2, c1, k60).
+1736462377: New connection from 172.19.0.5:52142 on port 1883.
+1736462377: Client middleware-subscriber already connected, closing old connection.
+1736462377: New client connected from 172.19.0.5:52142 as middleware-subscriber (p2, c1, k60).
+1736462378: New connection from 172.19.0.4:57552 on port 1883.
+1736462378: Client middleware-subscriber already connected, closing old connection.
+1736462378: New client connected from 172.19.0.4:57552 as middleware-subscriber (p2, c1, k60).
+1736462379: New connection from 172.19.0.5:52148 on port 1883.
+1736462380: Client middleware-subscriber already connected, closing old connection.
+1736462380: New client connected from 172.19.0.5:52148 as middleware-subscriber (p2, c1, k60).
+1736462381: New connection from 172.19.0.4:57568 on port 1883.
+1736462381: Client middleware-subscriber already connected, closing old connection.
+1736462381: New client connected from 172.19.0.4:57568 as middleware-subscriber (p2, c1, k60).
+1736462382: New connection from 172.19.0.5:52158 on port 1883.
+1736462382: Client middleware-subscriber already connected, closing old connection.
+1736462382: New client connected from 172.19.0.5:52158 as middleware-subscriber (p2, c1, k60).
+1736462383: New connection from 172.19.0.4:57576 on port 1883.
+1736462384: Client middleware-subscriber already connected, closing old connection.
+1736462384: New client connected from 172.19.0.4:57576 as middleware-subscriber (p2, c1, k60).
+1736462385: New connection from 172.19.0.5:52174 on port 1883.
+1736462385: Client middleware-subscriber already connected, closing old connection.
+1736462385: New client connected from 172.19.0.5:52174 as middleware-subscriber (p2, c1, k60).
+1736462386: New connection from 172.19.0.4:57580 on port 1883.
+1736462386: Client middleware-subscriber already connected, closing old connection.
+1736462386: New client connected from 172.19.0.4:57580 as middleware-subscriber (p2, c1, k60).
+1736462387: New connection from 172.19.0.5:39926 on port 1883.
+1736462388: Client middleware-subscriber already connected, closing old connection.
+1736462388: New client connected from 172.19.0.5:39926 as middleware-subscriber (p2, c1, k60).
+1736462389: New connection from 172.19.0.4:57450 on port 1883.
+1736462389: Client middleware-subscriber already connected, closing old connection.
+1736462389: New client connected from 172.19.0.4:57450 as middleware-subscriber (p2, c1, k60).
+1736462390: New connection from 172.19.0.5:39928 on port 1883.
+1736462390: Client middleware-subscriber already connected, closing old connection.
+1736462390: New client connected from 172.19.0.5:39928 as middleware-subscriber (p2, c1, k60).
+1736462391: New connection from 172.19.0.4:57452 on port 1883.
+1736462392: Client middleware-subscriber already connected, closing old connection.
+1736462392: New client connected from 172.19.0.4:57452 as middleware-subscriber (p2, c1, k60).
+1736462393: New connection from 172.19.0.5:39934 on port 1883.
+1736462393: Client middleware-subscriber already connected, closing old connection.
+1736462393: New client connected from 172.19.0.5:39934 as middleware-subscriber (p2, c1, k60).
+1736462394: New connection from 172.19.0.4:57456 on port 1883.
+1736462394: Client middleware-subscriber already connected, closing old connection.
+1736462394: New client connected from 172.19.0.4:57456 as middleware-subscriber (p2, c1, k60).
+1736462395: New connection from 172.19.0.5:39938 on port 1883.
+1736462396: Client middleware-subscriber already connected, closing old connection.
+1736462396: New client connected from 172.19.0.5:39938 as middleware-subscriber (p2, c1, k60).
+1736462397: New connection from 172.19.0.4:46880 on port 1883.
+1736462397: Client middleware-subscriber already connected, closing old connection.
+1736462397: New client connected from 172.19.0.4:46880 as middleware-subscriber (p2, c1, k60).
+1736462398: New connection from 172.19.0.5:35032 on port 1883.
+1736462398: Client middleware-subscriber already connected, closing old connection.
+1736462398: New client connected from 172.19.0.5:35032 as middleware-subscriber (p2, c1, k60).
+1736462399: New connection from 172.19.0.4:46886 on port 1883.
+1736462399: Client middleware-subscriber already connected, closing old connection.
+1736462399: New client connected from 172.19.0.4:46886 as middleware-subscriber (p2, c1, k60).
+1736462400: New connection from 172.19.0.5:35040 on port 1883.
+1736462401: Client middleware-subscriber already connected, closing old connection.
+1736462401: New client connected from 172.19.0.5:35040 as middleware-subscriber (p2, c1, k60).
+1736462402: New connection from 172.19.0.4:46896 on port 1883.
+1736462402: Client middleware-subscriber already connected, closing old connection.
+1736462402: New client connected from 172.19.0.4:46896 as middleware-subscriber (p2, c1, k60).
+1736462403: New connection from 172.19.0.5:35056 on port 1883.
+1736462403: Client middleware-subscriber already connected, closing old connection.
+1736462403: New client connected from 172.19.0.5:35056 as middleware-subscriber (p2, c1, k60).
+1736462404: New connection from 172.19.0.4:46898 on port 1883.
+1736462405: Client middleware-subscriber already connected, closing old connection.
+1736462405: New client connected from 172.19.0.4:46898 as middleware-subscriber (p2, c1, k60).
+1736462406: New connection from 172.19.0.5:35068 on port 1883.
+1736462406: Client middleware-subscriber already connected, closing old connection.
+1736462406: New client connected from 172.19.0.5:35068 as middleware-subscriber (p2, c1, k60).
+1736462407: New connection from 172.19.0.4:42502 on port 1883.
+1736462407: Client middleware-subscriber already connected, closing old connection.
+1736462407: New client connected from 172.19.0.4:42502 as middleware-subscriber (p2, c1, k60).
+1736462408: New connection from 172.19.0.5:41992 on port 1883.
+1736462409: Client middleware-subscriber already connected, closing old connection.
+1736462409: New client connected from 172.19.0.5:41992 as middleware-subscriber (p2, c1, k60).
+1736462410: New connection from 172.19.0.4:42508 on port 1883.
+1736462410: Client middleware-subscriber already connected, closing old connection.
+1736462410: New client connected from 172.19.0.4:42508 as middleware-subscriber (p2, c1, k60).
+1736462411: New connection from 172.19.0.5:42004 on port 1883.
+1736462411: Client middleware-subscriber already connected, closing old connection.
+1736462411: New client connected from 172.19.0.5:42004 as middleware-subscriber (p2, c1, k60).
+1736462412: New connection from 172.19.0.4:42510 on port 1883.
+1736462413: Client middleware-subscriber already connected, closing old connection.
+1736462413: New client connected from 172.19.0.4:42510 as middleware-subscriber (p2, c1, k60).
+1736462414: New connection from 172.19.0.5:42008 on port 1883.
+1736462414: Client middleware-subscriber already connected, closing old connection.
+1736462414: New client connected from 172.19.0.5:42008 as middleware-subscriber (p2, c1, k60).
+1736462415: New connection from 172.19.0.4:42518 on port 1883.
+1736462415: Client middleware-subscriber already connected, closing old connection.
+1736462415: New client connected from 172.19.0.4:42518 as middleware-subscriber (p2, c1, k60).
+1736462416: New connection from 172.19.0.5:48900 on port 1883.
+1736462416: Client middleware-subscriber already connected, closing old connection.
+1736462416: New client connected from 172.19.0.5:48900 as middleware-subscriber (p2, c1, k60).
+1736462417: New connection from 172.19.0.4:45422 on port 1883.
+1736462418: Client middleware-subscriber already connected, closing old connection.
+1736462418: New client connected from 172.19.0.4:45422 as middleware-subscriber (p2, c1, k60).
+1736462419: New connection from 172.19.0.5:48904 on port 1883.
+1736462419: Client middleware-subscriber already connected, closing old connection.
+1736462419: New client connected from 172.19.0.5:48904 as middleware-subscriber (p2, c1, k60).
+1736462420: New connection from 172.19.0.4:45432 on port 1883.
+1736462420: Client middleware-subscriber already connected, closing old connection.
+1736462420: New client connected from 172.19.0.4:45432 as middleware-subscriber (p2, c1, k60).
+1736462421: New connection from 172.19.0.5:48908 on port 1883.
+1736462422: Client middleware-subscriber already connected, closing old connection.
+1736462422: New client connected from 172.19.0.5:48908 as middleware-subscriber (p2, c1, k60).
+1736462423: New connection from 172.19.0.4:45446 on port 1883.
+1736462423: Client middleware-subscriber already connected, closing old connection.
+1736462423: New client connected from 172.19.0.4:45446 as middleware-subscriber (p2, c1, k60).
+1736462424: New connection from 172.19.0.5:48914 on port 1883.
+1736462424: Client middleware-subscriber already connected, closing old connection.
+1736462424: New client connected from 172.19.0.5:48914 as middleware-subscriber (p2, c1, k60).
+1736462425: New connection from 172.19.0.4:45460 on port 1883.
+1736462426: Client middleware-subscriber already connected, closing old connection.
+1736462426: New client connected from 172.19.0.4:45460 as middleware-subscriber (p2, c1, k60).
+1736462427: New connection from 172.19.0.5:44538 on port 1883.
+1736462427: Client middleware-subscriber already connected, closing old connection.
+1736462427: New client connected from 172.19.0.5:44538 as middleware-subscriber (p2, c1, k60).
+1736462428: New connection from 172.19.0.4:45690 on port 1883.
+1736462428: Client middleware-subscriber already connected, closing old connection.
+1736462428: New client connected from 172.19.0.4:45690 as middleware-subscriber (p2, c1, k60).
+1736462429: New connection from 172.19.0.5:44548 on port 1883.
+1736462430: Client middleware-subscriber already connected, closing old connection.
+1736462430: New client connected from 172.19.0.5:44548 as middleware-subscriber (p2, c1, k60).
+1736462431: New connection from 172.19.0.4:45694 on port 1883.
+1736462431: Client middleware-subscriber already connected, closing old connection.
+1736462431: New client connected from 172.19.0.4:45694 as middleware-subscriber (p2, c1, k60).
+1736462432: New connection from 172.19.0.5:44554 on port 1883.
+1736462432: Client middleware-subscriber already connected, closing old connection.
+1736462432: New client connected from 172.19.0.5:44554 as middleware-subscriber (p2, c1, k60).
+1736462433: New connection from 172.19.0.4:45708 on port 1883.
+1736462433: Client middleware-subscriber already connected, closing old connection.
+1736462433: New client connected from 172.19.0.4:45708 as middleware-subscriber (p2, c1, k60).
+1736462434: New connection from 172.19.0.5:44560 on port 1883.
+1736462435: Client middleware-subscriber already connected, closing old connection.
+1736462435: New client connected from 172.19.0.5:44560 as middleware-subscriber (p2, c1, k60).
+1736462436: New connection from 172.19.0.4:45712 on port 1883.
+1736462436: Client middleware-subscriber already connected, closing old connection.
+1736462436: New client connected from 172.19.0.4:45712 as middleware-subscriber (p2, c1, k60).
+1736462437: New connection from 172.19.0.5:50008 on port 1883.
+1736462437: Client middleware-subscriber already connected, closing old connection.
+1736462437: New client connected from 172.19.0.5:50008 as middleware-subscriber (p2, c1, k60).
+1736462438: New connection from 172.19.0.4:48470 on port 1883.
+1736462439: Client middleware-subscriber already connected, closing old connection.
+1736462439: New client connected from 172.19.0.4:48470 as middleware-subscriber (p2, c1, k60).
+1736462440: New connection from 172.19.0.5:50012 on port 1883.
+1736462440: Client middleware-subscriber already connected, closing old connection.
+1736462440: New client connected from 172.19.0.5:50012 as middleware-subscriber (p2, c1, k60).
+1736462441: New connection from 172.19.0.4:48480 on port 1883.
+1736462441: Client middleware-subscriber already connected, closing old connection.
+1736462441: New client connected from 172.19.0.4:48480 as middleware-subscriber (p2, c1, k60).
+1736462442: New connection from 172.19.0.5:50026 on port 1883.
+1736462443: Client middleware-subscriber already connected, closing old connection.
+1736462443: New client connected from 172.19.0.5:50026 as middleware-subscriber (p2, c1, k60).
+1736462444: New connection from 172.19.0.4:48492 on port 1883.
+1736462444: Client middleware-subscriber already connected, closing old connection.
+1736462444: New client connected from 172.19.0.4:48492 as middleware-subscriber (p2, c1, k60).
+1736462445: New connection from 172.19.0.5:50028 on port 1883.
+1736462445: Client middleware-subscriber already connected, closing old connection.
+1736462445: New client connected from 172.19.0.5:50028 as middleware-subscriber (p2, c1, k60).
+1736462446: New connection from 172.19.0.4:56692 on port 1883.
+1736462447: Client middleware-subscriber already connected, closing old connection.
+1736462447: New client connected from 172.19.0.4:56692 as middleware-subscriber (p2, c1, k60).
+1736462448: New connection from 172.19.0.5:47510 on port 1883.
+1736462448: Client middleware-subscriber already connected, closing old connection.
+1736462448: New client connected from 172.19.0.5:47510 as middleware-subscriber (p2, c1, k60).
+1736462449: New connection from 172.19.0.4:56708 on port 1883.
+1736462449: Client middleware-subscriber already connected, closing old connection.
+1736462449: New client connected from 172.19.0.4:56708 as middleware-subscriber (p2, c1, k60).
+1736462450: New connection from 172.19.0.5:47520 on port 1883.
+1736462450: Client middleware-subscriber already connected, closing old connection.
+1736462450: New client connected from 172.19.0.5:47520 as middleware-subscriber (p2, c1, k60).
+1736462451: New connection from 172.19.0.4:56712 on port 1883.
+1736462452: Client middleware-subscriber already connected, closing old connection.
+1736462452: New client connected from 172.19.0.4:56712 as middleware-subscriber (p2, c1, k60).
+1736462453: New connection from 172.19.0.5:47530 on port 1883.
+1736462453: Client middleware-subscriber already connected, closing old connection.
+1736462453: New client connected from 172.19.0.5:47530 as middleware-subscriber (p2, c1, k60).
+1736462454: New connection from 172.19.0.4:56720 on port 1883.
+1736462454: Client middleware-subscriber already connected, closing old connection.
+1736462454: New client connected from 172.19.0.4:56720 as middleware-subscriber (p2, c1, k60).
+1736462455: New connection from 172.19.0.5:47536 on port 1883.
+1736462456: Client middleware-subscriber already connected, closing old connection.
+1736462456: New client connected from 172.19.0.5:47536 as middleware-subscriber (p2, c1, k60).
+1736462457: New connection from 172.19.0.4:54382 on port 1883.
+1736462457: Client middleware-subscriber already connected, closing old connection.
+1736462457: New client connected from 172.19.0.4:54382 as middleware-subscriber (p2, c1, k60).
+1736462458: New connection from 172.19.0.5:56882 on port 1883.
+1736462458: Client middleware-subscriber already connected, closing old connection.
+1736462458: New client connected from 172.19.0.5:56882 as middleware-subscriber (p2, c1, k60).
+1736462459: New connection from 172.19.0.4:54398 on port 1883.
+1736462460: Client middleware-subscriber already connected, closing old connection.
+1736462460: New client connected from 172.19.0.4:54398 as middleware-subscriber (p2, c1, k60).
+1736462461: New connection from 172.19.0.5:56884 on port 1883.
+1736462461: Client middleware-subscriber already connected, closing old connection.
+1736462461: New client connected from 172.19.0.5:56884 as middleware-subscriber (p2, c1, k60).
+1736462462: New connection from 172.19.0.4:54414 on port 1883.
+1736462462: Client middleware-subscriber already connected, closing old connection.
+1736462462: New client connected from 172.19.0.4:54414 as middleware-subscriber (p2, c1, k60).
+1736462463: New connection from 172.19.0.5:56900 on port 1883.
+1736462464: Client middleware-subscriber already connected, closing old connection.
+1736462464: New client connected from 172.19.0.5:56900 as middleware-subscriber (p2, c1, k60).
+1736462465: New connection from 172.19.0.4:54428 on port 1883.
+1736462465: Client middleware-subscriber already connected, closing old connection.
+1736462465: New client connected from 172.19.0.4:54428 as middleware-subscriber (p2, c1, k60).
+1736462466: New connection from 172.19.0.5:56914 on port 1883.
+1736462466: Client middleware-subscriber already connected, closing old connection.
+1736462466: New client connected from 172.19.0.5:56914 as middleware-subscriber (p2, c1, k60).
+1736462467: New connection from 172.19.0.4:51172 on port 1883.
+1736462467: Client middleware-subscriber already connected, closing old connection.
+1736462467: New client connected from 172.19.0.4:51172 as middleware-subscriber (p2, c1, k60).
+1736462468: New connection from 172.19.0.5:43288 on port 1883.
+1736462469: Client middleware-subscriber already connected, closing old connection.
+1736462469: New client connected from 172.19.0.5:43288 as middleware-subscriber (p2, c1, k60).
+1736462470: New connection from 172.19.0.4:51184 on port 1883.
+1736462470: Client middleware-subscriber already connected, closing old connection.
+1736462470: New client connected from 172.19.0.4:51184 as middleware-subscriber (p2, c1, k60).
+1736462471: New connection from 172.19.0.5:43292 on port 1883.
+1736462471: Client middleware-subscriber already connected, closing old connection.
+1736462471: New client connected from 172.19.0.5:43292 as middleware-subscriber (p2, c1, k60).
+1736462472: New connection from 172.19.0.4:51200 on port 1883.
+1736462473: Client middleware-subscriber already connected, closing old connection.
+1736462473: New client connected from 172.19.0.4:51200 as middleware-subscriber (p2, c1, k60).
+1736462474: New connection from 172.19.0.5:43304 on port 1883.
+1736462474: Client middleware-subscriber already connected, closing old connection.
+1736462474: New client connected from 172.19.0.5:43304 as middleware-subscriber (p2, c1, k60).
+1736462475: New connection from 172.19.0.4:51210 on port 1883.
+1736462475: Client middleware-subscriber already connected, closing old connection.
+1736462475: New client connected from 172.19.0.4:51210 as middleware-subscriber (p2, c1, k60).
+1736462476: New connection from 172.19.0.5:53152 on port 1883.
+1736462477: Client middleware-subscriber already connected, closing old connection.
+1736462477: New client connected from 172.19.0.5:53152 as middleware-subscriber (p2, c1, k60).
+1736462478: New connection from 172.19.0.4:41972 on port 1883.
+1736462478: Client middleware-subscriber already connected, closing old connection.
+1736462478: New client connected from 172.19.0.4:41972 as middleware-subscriber (p2, c1, k60).
+1736462479: New connection from 172.19.0.5:53164 on port 1883.
+1736462479: Client middleware-subscriber already connected, closing old connection.
+1736462479: New client connected from 172.19.0.5:53164 as middleware-subscriber (p2, c1, k60).
+1736462480: New connection from 172.19.0.4:41974 on port 1883.
+1736462481: Client middleware-subscriber already connected, closing old connection.
+1736462481: New client connected from 172.19.0.4:41974 as middleware-subscriber (p2, c1, k60).
+1736462482: New connection from 172.19.0.5:53166 on port 1883.
+1736462482: Client middleware-subscriber already connected, closing old connection.
+1736462482: New client connected from 172.19.0.5:53166 as middleware-subscriber (p2, c1, k60).
+1736462483: New connection from 172.19.0.4:41990 on port 1883.
+1736462483: Client middleware-subscriber already connected, closing old connection.
+1736462483: New client connected from 172.19.0.4:41990 as middleware-subscriber (p2, c1, k60).
+1736462484: New connection from 172.19.0.5:53174 on port 1883.
+1736462484: Client middleware-subscriber already connected, closing old connection.
+1736462484: New client connected from 172.19.0.5:53174 as middleware-subscriber (p2, c1, k60).
+1736462485: New connection from 172.19.0.4:42004 on port 1883.
+1736462486: Client middleware-subscriber already connected, closing old connection.
+1736462486: New client connected from 172.19.0.4:42004 as middleware-subscriber (p2, c1, k60).
+1736462487: New connection from 172.19.0.5:45176 on port 1883.
+1736462487: Client middleware-subscriber already connected, closing old connection.
+1736462487: New client connected from 172.19.0.5:45176 as middleware-subscriber (p2, c1, k60).
+1736462488: New connection from 172.19.0.4:38806 on port 1883.
+1736462488: Client middleware-subscriber already connected, closing old connection.
+1736462488: New client connected from 172.19.0.4:38806 as middleware-subscriber (p2, c1, k60).
+1736462489: New connection from 172.19.0.5:45180 on port 1883.
+1736462490: Client middleware-subscriber already connected, closing old connection.
+1736462490: New client connected from 172.19.0.5:45180 as middleware-subscriber (p2, c1, k60).
+1736462491: New connection from 172.19.0.4:38816 on port 1883.
+1736462491: Client middleware-subscriber already connected, closing old connection.
+1736462491: New client connected from 172.19.0.4:38816 as middleware-subscriber (p2, c1, k60).
+1736462492: New connection from 172.19.0.5:45186 on port 1883.
+1736462492: Client middleware-subscriber already connected, closing old connection.
+1736462492: New client connected from 172.19.0.5:45186 as middleware-subscriber (p2, c1, k60).
+1736462493: New connection from 172.19.0.4:38828 on port 1883.
+1736462494: Client middleware-subscriber already connected, closing old connection.
+1736462494: New client connected from 172.19.0.4:38828 as middleware-subscriber (p2, c1, k60).
+1736462495: New connection from 172.19.0.5:45194 on port 1883.
+1736462495: Client middleware-subscriber already connected, closing old connection.
+1736462495: New client connected from 172.19.0.5:45194 as middleware-subscriber (p2, c1, k60).
+1736462496: New connection from 172.19.0.4:38836 on port 1883.
+1736462496: Client middleware-subscriber already connected, closing old connection.
+1736462496: New client connected from 172.19.0.4:38836 as middleware-subscriber (p2, c1, k60).
+1736462497: New connection from 172.19.0.5:37454 on port 1883.
+1736462498: Client middleware-subscriber already connected, closing old connection.
+1736462498: New client connected from 172.19.0.5:37454 as middleware-subscriber (p2, c1, k60).
+1736462499: New connection from 172.19.0.4:35302 on port 1883.
+1736462499: Client middleware-subscriber already connected, closing old connection.
+1736462499: New client connected from 172.19.0.4:35302 as middleware-subscriber (p2, c1, k60).
+1736462500: New connection from 172.19.0.5:37470 on port 1883.
+1736462500: Client middleware-subscriber already connected, closing old connection.
+1736462500: New client connected from 172.19.0.5:37470 as middleware-subscriber (p2, c1, k60).
+1736462501: New connection from 172.19.0.4:35308 on port 1883.
+1736462501: Client middleware-subscriber already connected, closing old connection.
+1736462501: New client connected from 172.19.0.4:35308 as middleware-subscriber (p2, c1, k60).
+1736462502: New connection from 172.19.0.5:37482 on port 1883.
+1736462503: Client middleware-subscriber already connected, closing old connection.
+1736462503: New client connected from 172.19.0.5:37482 as middleware-subscriber (p2, c1, k60).
+1736462504: New connection from 172.19.0.4:35314 on port 1883.
+1736462504: Client middleware-subscriber already connected, closing old connection.
+1736462504: New client connected from 172.19.0.4:35314 as middleware-subscriber (p2, c1, k60).
+1736462505: New connection from 172.19.0.5:37488 on port 1883.
+1736462505: Client middleware-subscriber already connected, closing old connection.
+1736462505: New client connected from 172.19.0.5:37488 as middleware-subscriber (p2, c1, k60).
+1736462506: New connection from 172.19.0.4:36122 on port 1883.
+1736462507: Client middleware-subscriber already connected, closing old connection.
+1736462507: New client connected from 172.19.0.4:36122 as middleware-subscriber (p2, c1, k60).
+1736462508: New connection from 172.19.0.5:42442 on port 1883.
+1736462508: Client middleware-subscriber already connected, closing old connection.
+1736462508: New client connected from 172.19.0.5:42442 as middleware-subscriber (p2, c1, k60).
+1736462509: New connection from 172.19.0.4:36128 on port 1883.
+1736462509: Client middleware-subscriber already connected, closing old connection.
+1736462509: New client connected from 172.19.0.4:36128 as middleware-subscriber (p2, c1, k60).
+1736462510: New connection from 172.19.0.5:42450 on port 1883.
+1736462511: Client middleware-subscriber already connected, closing old connection.
+1736462511: New client connected from 172.19.0.5:42450 as middleware-subscriber (p2, c1, k60).
+1736462512: New connection from 172.19.0.4:36142 on port 1883.
+1736462512: Client middleware-subscriber already connected, closing old connection.
+1736462512: New client connected from 172.19.0.4:36142 as middleware-subscriber (p2, c1, k60).
+1736462513: New connection from 172.19.0.5:42452 on port 1883.
+1736462513: Client middleware-subscriber already connected, closing old connection.
+1736462513: New client connected from 172.19.0.5:42452 as middleware-subscriber (p2, c1, k60).
+1736462514: New connection from 172.19.0.4:36148 on port 1883.
+1736462515: Client middleware-subscriber already connected, closing old connection.
+1736462515: New client connected from 172.19.0.4:36148 as middleware-subscriber (p2, c1, k60).
+1736462516: New connection from 172.19.0.5:42464 on port 1883.
+1736462516: Client middleware-subscriber already connected, closing old connection.
+1736462516: New client connected from 172.19.0.5:42464 as middleware-subscriber (p2, c1, k60).
+1736462517: New connection from 172.19.0.4:44576 on port 1883.
+1736462517: Client middleware-subscriber already connected, closing old connection.
+1736462517: New client connected from 172.19.0.4:44576 as middleware-subscriber (p2, c1, k60).
+1736462518: New connection from 172.19.0.5:45170 on port 1883.
+1736462518: Client middleware-subscriber already connected, closing old connection.
+1736462518: New client connected from 172.19.0.5:45170 as middleware-subscriber (p2, c1, k60).
+1736462519: New connection from 172.19.0.4:44590 on port 1883.
+1736462520: Client middleware-subscriber already connected, closing old connection.
+1736462520: New client connected from 172.19.0.4:44590 as middleware-subscriber (p2, c1, k60).
+1736462521: New connection from 172.19.0.5:45178 on port 1883.
+1736462521: Client middleware-subscriber already connected, closing old connection.
+1736462521: New client connected from 172.19.0.5:45178 as middleware-subscriber (p2, c1, k60).
+1736462522: New connection from 172.19.0.4:44594 on port 1883.
+1736462522: Client middleware-subscriber already connected, closing old connection.
+1736462522: New client connected from 172.19.0.4:44594 as middleware-subscriber (p2, c1, k60).
+1736462523: New connection from 172.19.0.5:45184 on port 1883.
+1736462524: Client middleware-subscriber already connected, closing old connection.
+1736462524: New client connected from 172.19.0.5:45184 as middleware-subscriber (p2, c1, k60).
+1736462525: New connection from 172.19.0.4:44610 on port 1883.
+1736462525: Client middleware-subscriber already connected, closing old connection.
+1736462525: New client connected from 172.19.0.4:44610 as middleware-subscriber (p2, c1, k60).
+1736462526: New connection from 172.19.0.5:45194 on port 1883.
+1736462526: Client middleware-subscriber already connected, closing old connection.
+1736462526: New client connected from 172.19.0.5:45194 as middleware-subscriber (p2, c1, k60).
+1736462527: New connection from 172.19.0.4:47192 on port 1883.
+1736462528: Client middleware-subscriber already connected, closing old connection.
+1736462528: New client connected from 172.19.0.4:47192 as middleware-subscriber (p2, c1, k60).
+1736462529: New connection from 172.19.0.5:50888 on port 1883.
+1736462529: Client middleware-subscriber already connected, closing old connection.
+1736462529: New client connected from 172.19.0.5:50888 as middleware-subscriber (p2, c1, k60).
+1736462530: New connection from 172.19.0.4:47206 on port 1883.
+1736462530: Client middleware-subscriber already connected, closing old connection.
+1736462530: New client connected from 172.19.0.4:47206 as middleware-subscriber (p2, c1, k60).
+1736462531: New connection from 172.19.0.5:50894 on port 1883.
+1736462532: Client middleware-subscriber already connected, closing old connection.
+1736462532: New client connected from 172.19.0.5:50894 as middleware-subscriber (p2, c1, k60).
+1736462533: New connection from 172.19.0.4:47218 on port 1883.
+1736462533: Client middleware-subscriber already connected, closing old connection.
+1736462533: New client connected from 172.19.0.4:47218 as middleware-subscriber (p2, c1, k60).
+1736462534: New connection from 172.19.0.5:50910 on port 1883.
+1736462534: Client middleware-subscriber already connected, closing old connection.
+1736462534: New client connected from 172.19.0.5:50910 as middleware-subscriber (p2, c1, k60).
+1736462535: New connection from 172.19.0.4:47220 on port 1883.
+1736462535: Client middleware-subscriber already connected, closing old connection.
+1736462535: New client connected from 172.19.0.4:47220 as middleware-subscriber (p2, c1, k60).
+1736462536: New connection from 172.19.0.5:41212 on port 1883.
+1736462537: Client middleware-subscriber already connected, closing old connection.
+1736462537: New client connected from 172.19.0.5:41212 as middleware-subscriber (p2, c1, k60).
+1736462538: New connection from 172.19.0.4:41748 on port 1883.
+1736462538: Client middleware-subscriber already connected, closing old connection.
+1736462538: New client connected from 172.19.0.4:41748 as middleware-subscriber (p2, c1, k60).
+1736462539: New connection from 172.19.0.5:41218 on port 1883.
+1736462539: Client middleware-subscriber already connected, closing old connection.
+1736462539: New client connected from 172.19.0.5:41218 as middleware-subscriber (p2, c1, k60).
+1736462540: New connection from 172.19.0.4:41752 on port 1883.
+1736462541: Client middleware-subscriber already connected, closing old connection.
+1736462541: New client connected from 172.19.0.4:41752 as middleware-subscriber (p2, c1, k60).
+1736462542: New connection from 172.19.0.5:41226 on port 1883.
+1736462542: Client middleware-subscriber already connected, closing old connection.
+1736462542: New client connected from 172.19.0.5:41226 as middleware-subscriber (p2, c1, k60).
+1736462543: New connection from 172.19.0.4:41766 on port 1883.
+1736462543: Client middleware-subscriber already connected, closing old connection.
+1736462543: New client connected from 172.19.0.4:41766 as middleware-subscriber (p2, c1, k60).
+1736462544: New connection from 172.19.0.5:41236 on port 1883.
+1736462545: Client middleware-subscriber already connected, closing old connection.
+1736462545: New client connected from 172.19.0.5:41236 as middleware-subscriber (p2, c1, k60).
+1736462546: New connection from 172.19.0.4:41782 on port 1883.
+1736462546: Client middleware-subscriber already connected, closing old connection.
+1736462546: New client connected from 172.19.0.4:41782 as middleware-subscriber (p2, c1, k60).
+1736462547: New connection from 172.19.0.5:39202 on port 1883.
+1736462547: Client middleware-subscriber already connected, closing old connection.
+1736462547: New client connected from 172.19.0.5:39202 as middleware-subscriber (p2, c1, k60).
+1736462548: New connection from 172.19.0.4:53410 on port 1883.
+1736462549: Client middleware-subscriber already connected, closing old connection.
+1736462549: New client connected from 172.19.0.4:53410 as middleware-subscriber (p2, c1, k60).
+1736462550: New connection from 172.19.0.5:39206 on port 1883.
+1736462550: Client middleware-subscriber already connected, closing old connection.
+1736462550: New client connected from 172.19.0.5:39206 as middleware-subscriber (p2, c1, k60).
+1736462551: New connection from 172.19.0.4:53416 on port 1883.
+1736462551: Client middleware-subscriber already connected, closing old connection.
+1736462551: New client connected from 172.19.0.4:53416 as middleware-subscriber (p2, c1, k60).
+1736462552: New connection from 172.19.0.5:39208 on port 1883.
+1736462552: Client middleware-subscriber already connected, closing old connection.
+1736462552: New client connected from 172.19.0.5:39208 as middleware-subscriber (p2, c1, k60).
+1736462553: New connection from 172.19.0.4:53426 on port 1883.
+1736462554: Client middleware-subscriber already connected, closing old connection.
+1736462554: New client connected from 172.19.0.4:53426 as middleware-subscriber (p2, c1, k60).
+1736462555: New connection from 172.19.0.5:39210 on port 1883.
+1736462555: Client middleware-subscriber already connected, closing old connection.
+1736462555: New client connected from 172.19.0.5:39210 as middleware-subscriber (p2, c1, k60).
+1736462556: New connection from 172.19.0.4:53440 on port 1883.
+1736462556: Client middleware-subscriber already connected, closing old connection.
+1736462556: New client connected from 172.19.0.4:53440 as middleware-subscriber (p2, c1, k60).
+1736462557: New connection from 172.19.0.5:44994 on port 1883.
+1736462558: Client middleware-subscriber already connected, closing old connection.
+1736462558: New client connected from 172.19.0.5:44994 as middleware-subscriber (p2, c1, k60).
+1736462559: New connection from 172.19.0.4:52558 on port 1883.
+1736462559: Client middleware-subscriber already connected, closing old connection.
+1736462559: New client connected from 172.19.0.4:52558 as middleware-subscriber (p2, c1, k60).
+1736462560: New connection from 172.19.0.5:45006 on port 1883.
+1736462560: Client middleware-subscriber already connected, closing old connection.
+1736462560: New client connected from 172.19.0.5:45006 as middleware-subscriber (p2, c1, k60).
+1736462561: New connection from 172.19.0.4:52568 on port 1883.
+1736462562: Client middleware-subscriber already connected, closing old connection.
+1736462562: New client connected from 172.19.0.4:52568 as middleware-subscriber (p2, c1, k60).
+1736462563: New connection from 172.19.0.5:45014 on port 1883.
+1736462563: Client middleware-subscriber already connected, closing old connection.
+1736462563: New client connected from 172.19.0.5:45014 as middleware-subscriber (p2, c1, k60).
+1736462564: New connection from 172.19.0.4:52576 on port 1883.
+1736462564: Client middleware-subscriber already connected, closing old connection.
+1736462564: New client connected from 172.19.0.4:52576 as middleware-subscriber (p2, c1, k60).
+1736462565: New connection from 172.19.0.5:45030 on port 1883.
+1736462566: Client middleware-subscriber already connected, closing old connection.
+1736462566: New client connected from 172.19.0.5:45030 as middleware-subscriber (p2, c1, k60).
+1736462567: New connection from 172.19.0.4:40608 on port 1883.
+1736462567: Client middleware-subscriber already connected, closing old connection.
+1736462567: New client connected from 172.19.0.4:40608 as middleware-subscriber (p2, c1, k60).
+1736462568: New connection from 172.19.0.5:51666 on port 1883.
+1736462568: Client middleware-subscriber already connected, closing old connection.
+1736462568: New client connected from 172.19.0.5:51666 as middleware-subscriber (p2, c1, k60).
+1736462569: New connection from 172.19.0.4:40610 on port 1883.
+1736462569: Client middleware-subscriber already connected, closing old connection.
+1736462569: New client connected from 172.19.0.4:40610 as middleware-subscriber (p2, c1, k60).
+1736462570: New connection from 172.19.0.5:51678 on port 1883.
+1736462571: Client middleware-subscriber already connected, closing old connection.
+1736462571: New client connected from 172.19.0.5:51678 as middleware-subscriber (p2, c1, k60).
+1736462572: New connection from 172.19.0.4:40616 on port 1883.
+1736462572: Client middleware-subscriber already connected, closing old connection.
+1736462572: New client connected from 172.19.0.4:40616 as middleware-subscriber (p2, c1, k60).
+1736462573: New connection from 172.19.0.5:51680 on port 1883.
+1736462573: Client middleware-subscriber already connected, closing old connection.
+1736462573: New client connected from 172.19.0.5:51680 as middleware-subscriber (p2, c1, k60).
+1736462574: New connection from 172.19.0.4:40624 on port 1883.
+1736462575: Client middleware-subscriber already connected, closing old connection.
+1736462575: New client connected from 172.19.0.4:40624 as middleware-subscriber (p2, c1, k60).
+1736462576: New connection from 172.19.0.5:51682 on port 1883.
+1736462576: Client middleware-subscriber already connected, closing old connection.
+1736462576: New client connected from 172.19.0.5:51682 as middleware-subscriber (p2, c1, k60).
+1736462577: New connection from 172.19.0.4:59028 on port 1883.
+1736462577: Client middleware-subscriber already connected, closing old connection.
+1736462577: New client connected from 172.19.0.4:59028 as middleware-subscriber (p2, c1, k60).
+1736462578: New connection from 172.19.0.5:43316 on port 1883.
+1736462579: Client middleware-subscriber already connected, closing old connection.
+1736462579: New client connected from 172.19.0.5:43316 as middleware-subscriber (p2, c1, k60).
+1736462580: New connection from 172.19.0.4:59036 on port 1883.
+1736462580: Client middleware-subscriber already connected, closing old connection.
+1736462580: New client connected from 172.19.0.4:59036 as middleware-subscriber (p2, c1, k60).
+1736462581: New connection from 172.19.0.5:43320 on port 1883.
+1736462581: Client middleware-subscriber already connected, closing old connection.
+1736462581: New client connected from 172.19.0.5:43320 as middleware-subscriber (p2, c1, k60).
+1736462582: New connection from 172.19.0.4:59042 on port 1883.
+1736462583: Client middleware-subscriber already connected, closing old connection.
+1736462583: New client connected from 172.19.0.4:59042 as middleware-subscriber (p2, c1, k60).
+1736462584: New connection from 172.19.0.5:43322 on port 1883.
+1736462584: Client middleware-subscriber already connected, closing old connection.
+1736462584: New client connected from 172.19.0.5:43322 as middleware-subscriber (p2, c1, k60).
+1736462585: New connection from 172.19.0.4:59048 on port 1883.
+1736462585: Client middleware-subscriber already connected, closing old connection.
+1736462585: New client connected from 172.19.0.4:59048 as middleware-subscriber (p2, c1, k60).
+1736462586: New connection from 172.19.0.5:50368 on port 1883.
+1736462586: Client middleware-subscriber disconnected.
+1736462591: Client middleware-publisher disconnected.
+1736462596: Client <unknown> closed its connection.
+1736462597: mosquitto version 2.0.20 terminating
+1736462597: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1736462631: mosquitto version 2.0.20 starting
+1736462631: Config loaded from /mosquitto/config/mosquitto.conf.
+1736462631: Opening ipv4 listen socket on port 1883.
+1736462631: Opening ipv6 listen socket on port 1883.
+1736462631: mosquitto version 2.0.20 running
+1736462680: New connection from 172.19.0.4:44306 on port 1883.
+1736462680: New client connected from 172.19.0.4:44306 as middleware-subscriber (p2, c1, k60).
+1736462680: Client middleware-subscriber disconnected.
+1736462690: mosquitto version 2.0.20 terminating
+1736462690: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1736462983: mosquitto version 2.0.20 starting
+1736462983: Config loaded from /mosquitto/config/mosquitto.conf.
+1736462983: Opening ipv4 listen socket on port 1883.
+1736462983: Opening ipv6 listen socket on port 1883.
+1736462983: mosquitto version 2.0.20 running
+1736463062: New connection from 172.19.0.4:56558 on port 1883.
+1736463062: New client connected from 172.19.0.4:56558 as middleware-subscriber (p2, c1, k60).
+1736463063: New connection from 172.19.0.5:36336 on port 1883.
+1736463064: Client middleware-subscriber already connected, closing old connection.
+1736463064: New client connected from 172.19.0.5:36336 as middleware-subscriber (p2, c1, k60).
+1736463065: New connection from 172.19.0.4:56562 on port 1883.
+1736463065: Client middleware-subscriber already connected, closing old connection.
+1736463065: New client connected from 172.19.0.4:56562 as middleware-subscriber (p2, c1, k60).
+1736463066: New connection from 172.19.0.5:36352 on port 1883.
+1736463066: Client middleware-subscriber already connected, closing old connection.
+1736463066: New client connected from 172.19.0.5:36352 as middleware-subscriber (p2, c1, k60).
+1736463067: New connection from 172.19.0.4:56784 on port 1883.
+1736463068: Client middleware-subscriber already connected, closing old connection.
+1736463068: New client connected from 172.19.0.4:56784 as middleware-subscriber (p2, c1, k60).
+1736463069: New connection from 172.19.0.5:44856 on port 1883.
+1736463069: Client middleware-subscriber already connected, closing old connection.
+1736463069: New client connected from 172.19.0.5:44856 as middleware-subscriber (p2, c1, k60).
+1736463070: New connection from 172.19.0.4:56800 on port 1883.
+1736463070: Client middleware-subscriber already connected, closing old connection.
+1736463070: New client connected from 172.19.0.4:56800 as middleware-subscriber (p2, c1, k60).
+1736463071: New connection from 172.19.0.5:44870 on port 1883.
+1736463072: Client middleware-subscriber already connected, closing old connection.
+1736463072: New client connected from 172.19.0.5:44870 as middleware-subscriber (p2, c1, k60).
+1736463073: New connection from 172.19.0.4:56812 on port 1883.
+1736463073: Client middleware-subscriber already connected, closing old connection.
+1736463073: New client connected from 172.19.0.4:56812 as middleware-subscriber (p2, c1, k60).
+1736463074: New connection from 172.19.0.5:44878 on port 1883.
+1736463074: Client middleware-subscriber already connected, closing old connection.
+1736463074: New client connected from 172.19.0.5:44878 as middleware-subscriber (p2, c1, k60).
+1736463075: New connection from 172.19.0.4:56822 on port 1883.
+1736463076: Client middleware-subscriber already connected, closing old connection.
+1736463076: New client connected from 172.19.0.4:56822 as middleware-subscriber (p2, c1, k60).
+1736463077: New connection from 172.19.0.5:58330 on port 1883.
+1736463077: Client middleware-subscriber already connected, closing old connection.
+1736463077: New client connected from 172.19.0.5:58330 as middleware-subscriber (p2, c1, k60).
+1736463078: New connection from 172.19.0.4:52126 on port 1883.
+1736463078: Client middleware-subscriber already connected, closing old connection.
+1736463078: New client connected from 172.19.0.4:52126 as middleware-subscriber (p2, c1, k60).
+1736463079: New connection from 172.19.0.5:58338 on port 1883.
+1736463079: Client middleware-subscriber already connected, closing old connection.
+1736463079: New client connected from 172.19.0.5:58338 as middleware-subscriber (p2, c1, k60).
+1736463080: New connection from 172.19.0.4:52136 on port 1883.
+1736463081: Client middleware-subscriber already connected, closing old connection.
+1736463081: New client connected from 172.19.0.4:52136 as middleware-subscriber (p2, c1, k60).
+1736463082: New connection from 172.19.0.5:58342 on port 1883.
+1736463082: Client middleware-subscriber already connected, closing old connection.
+1736463082: New client connected from 172.19.0.5:58342 as middleware-subscriber (p2, c1, k60).
+1736463083: New connection from 172.19.0.4:52142 on port 1883.
+1736463083: Client middleware-subscriber already connected, closing old connection.
+1736463083: New client connected from 172.19.0.4:52142 as middleware-subscriber (p2, c1, k60).
+1736463084: New connection from 172.19.0.5:58350 on port 1883.
+1736463085: Client middleware-subscriber already connected, closing old connection.
+1736463085: New client connected from 172.19.0.5:58350 as middleware-subscriber (p2, c1, k60).
+1736463086: New connection from 172.19.0.4:52148 on port 1883.
+1736463086: Client middleware-subscriber already connected, closing old connection.
+1736463086: New client connected from 172.19.0.4:52148 as middleware-subscriber (p2, c1, k60).
+1736463087: New connection from 172.19.0.5:38254 on port 1883.
+1736463087: Client middleware-subscriber already connected, closing old connection.
+1736463087: New client connected from 172.19.0.5:38254 as middleware-subscriber (p2, c1, k60).
+1736463088: New connection from 172.19.0.4:56962 on port 1883.
+1736463089: Client middleware-subscriber already connected, closing old connection.
+1736463089: New client connected from 172.19.0.4:56962 as middleware-subscriber (p2, c1, k60).
+1736463090: New connection from 172.19.0.5:38270 on port 1883.
+1736463090: Client middleware-subscriber already connected, closing old connection.
+1736463090: New client connected from 172.19.0.5:38270 as middleware-subscriber (p2, c1, k60).
+1736463091: New connection from 172.19.0.4:56964 on port 1883.
+1736463091: Client middleware-subscriber already connected, closing old connection.
+1736463091: New client connected from 172.19.0.4:56964 as middleware-subscriber (p2, c1, k60).
+1736463092: New connection from 172.19.0.5:38282 on port 1883.
+1736463093: Client middleware-subscriber already connected, closing old connection.
+1736463093: New client connected from 172.19.0.5:38282 as middleware-subscriber (p2, c1, k60).
+1736463094: New connection from 172.19.0.4:56968 on port 1883.
+1736463094: Client middleware-subscriber already connected, closing old connection.
+1736463094: New client connected from 172.19.0.4:56968 as middleware-subscriber (p2, c1, k60).
+1736463095: New connection from 172.19.0.5:38290 on port 1883.
+1736463095: Client middleware-subscriber already connected, closing old connection.
+1736463095: New client connected from 172.19.0.5:38290 as middleware-subscriber (p2, c1, k60).
+1736463096: New connection from 172.19.0.4:41720 on port 1883.
+1736463096: Client middleware-subscriber already connected, closing old connection.
+1736463096: New client connected from 172.19.0.4:41720 as middleware-subscriber (p2, c1, k60).
+1736463097: New connection from 172.19.0.5:39946 on port 1883.
+1736463098: Client middleware-subscriber already connected, closing old connection.
+1736463098: New client connected from 172.19.0.5:39946 as middleware-subscriber (p2, c1, k60).
+1736463099: New connection from 172.19.0.4:41730 on port 1883.
+1736463099: Client middleware-subscriber already connected, closing old connection.
+1736463099: New client connected from 172.19.0.4:41730 as middleware-subscriber (p2, c1, k60).
+1736463100: New connection from 172.19.0.5:39958 on port 1883.
+1736463100: Client middleware-subscriber already connected, closing old connection.
+1736463100: New client connected from 172.19.0.5:39958 as middleware-subscriber (p2, c1, k60).
+1736463101: New connection from 172.19.0.4:41736 on port 1883.
+1736463102: Client middleware-subscriber already connected, closing old connection.
+1736463102: New client connected from 172.19.0.4:41736 as middleware-subscriber (p2, c1, k60).
+1736463103: New connection from 172.19.0.5:39974 on port 1883.
+1736463103: Client middleware-subscriber already connected, closing old connection.
+1736463103: New client connected from 172.19.0.5:39974 as middleware-subscriber (p2, c1, k60).
+1736463104: New connection from 172.19.0.4:41746 on port 1883.
+1736463104: Client middleware-subscriber already connected, closing old connection.
+1736463104: New client connected from 172.19.0.4:41746 as middleware-subscriber (p2, c1, k60).
+1736463105: New connection from 172.19.0.5:39976 on port 1883.
+1736463106: Client middleware-subscriber already connected, closing old connection.
+1736463106: New client connected from 172.19.0.5:39976 as middleware-subscriber (p2, c1, k60).
+1736463107: New connection from 172.19.0.4:32776 on port 1883.
+1736463107: Client middleware-subscriber already connected, closing old connection.
+1736463107: New client connected from 172.19.0.4:32776 as middleware-subscriber (p2, c1, k60).
+1736463108: New connection from 172.19.0.5:44896 on port 1883.
+1736463108: Client middleware-subscriber already connected, closing old connection.
+1736463108: New client connected from 172.19.0.5:44896 as middleware-subscriber (p2, c1, k60).
+1736463109: New connection from 172.19.0.4:32780 on port 1883.
+1736463110: Client middleware-subscriber already connected, closing old connection.
+1736463110: New client connected from 172.19.0.4:32780 as middleware-subscriber (p2, c1, k60).
+1736463111: New connection from 172.19.0.5:44912 on port 1883.
+1736463111: Client middleware-subscriber already connected, closing old connection.
+1736463111: New client connected from 172.19.0.5:44912 as middleware-subscriber (p2, c1, k60).
+1736463112: New connection from 172.19.0.4:32788 on port 1883.
+1736463112: Client middleware-subscriber already connected, closing old connection.
+1736463112: New client connected from 172.19.0.4:32788 as middleware-subscriber (p2, c1, k60).
+1736463113: New connection from 172.19.0.5:44916 on port 1883.
+1736463113: Client middleware-subscriber already connected, closing old connection.
+1736463113: New client connected from 172.19.0.5:44916 as middleware-subscriber (p2, c1, k60).
+1736463114: New connection from 172.19.0.4:32790 on port 1883.
+1736463115: Client middleware-subscriber already connected, closing old connection.
+1736463115: New client connected from 172.19.0.4:32790 as middleware-subscriber (p2, c1, k60).
+1736463116: New connection from 172.19.0.5:44922 on port 1883.
+1736463116: Client middleware-subscriber already connected, closing old connection.
+1736463116: New client connected from 172.19.0.5:44922 as middleware-subscriber (p2, c1, k60).
+1736463117: New connection from 172.19.0.4:33806 on port 1883.
+1736463117: Client middleware-subscriber already connected, closing old connection.
+1736463117: New client connected from 172.19.0.4:33806 as middleware-subscriber (p2, c1, k60).
+1736463118: New connection from 172.19.0.5:50640 on port 1883.
+1736463119: Client middleware-subscriber already connected, closing old connection.
+1736463119: New client connected from 172.19.0.5:50640 as middleware-subscriber (p2, c1, k60).
+1736463120: New connection from 172.19.0.4:33820 on port 1883.
+1736463120: Client middleware-subscriber already connected, closing old connection.
+1736463120: New client connected from 172.19.0.4:33820 as middleware-subscriber (p2, c1, k60).
+1736463121: New connection from 172.19.0.5:50648 on port 1883.
+1736463121: Client middleware-subscriber already connected, closing old connection.
+1736463121: New client connected from 172.19.0.5:50648 as middleware-subscriber (p2, c1, k60).
+1736463122: New connection from 172.19.0.4:33828 on port 1883.
+1736463123: Client middleware-subscriber already connected, closing old connection.
+1736463123: New client connected from 172.19.0.4:33828 as middleware-subscriber (p2, c1, k60).
+1736463124: New connection from 172.19.0.5:50654 on port 1883.
+1736463124: Client middleware-subscriber already connected, closing old connection.
+1736463124: New client connected from 172.19.0.5:50654 as middleware-subscriber (p2, c1, k60).
+1736463125: New connection from 172.19.0.4:33832 on port 1883.
+1736463125: Client middleware-subscriber already connected, closing old connection.
+1736463125: New client connected from 172.19.0.4:33832 as middleware-subscriber (p2, c1, k60).
+1736463126: New connection from 172.19.0.5:49968 on port 1883.
+1736463126: Client middleware-subscriber already connected, closing old connection.
+1736463126: New client connected from 172.19.0.5:49968 as middleware-subscriber (p2, c1, k60).
+1736463127: New connection from 172.19.0.4:37056 on port 1883.
+1736463128: Client middleware-subscriber already connected, closing old connection.
+1736463128: New client connected from 172.19.0.4:37056 as middleware-subscriber (p2, c1, k60).
+1736463129: New connection from 172.19.0.5:49972 on port 1883.
+1736463129: Client middleware-subscriber already connected, closing old connection.
+1736463129: New client connected from 172.19.0.5:49972 as middleware-subscriber (p2, c1, k60).
+1736463130: New connection from 172.19.0.4:37072 on port 1883.
+1736463130: Client middleware-subscriber already connected, closing old connection.
+1736463130: New client connected from 172.19.0.4:37072 as middleware-subscriber (p2, c1, k60).
+1736463131: New connection from 172.19.0.5:49984 on port 1883.
+1736463132: Client middleware-subscriber already connected, closing old connection.
+1736463132: New client connected from 172.19.0.5:49984 as middleware-subscriber (p2, c1, k60).
+1736463133: New connection from 172.19.0.4:37084 on port 1883.
+1736463133: Client middleware-subscriber already connected, closing old connection.
+1736463133: New client connected from 172.19.0.4:37084 as middleware-subscriber (p2, c1, k60).
+1736463134: New connection from 172.19.0.5:49994 on port 1883.
+1736463134: Client middleware-subscriber already connected, closing old connection.
+1736463134: New client connected from 172.19.0.5:49994 as middleware-subscriber (p2, c1, k60).
+1736463135: New connection from 172.19.0.4:37100 on port 1883.
+1736463136: Client middleware-subscriber already connected, closing old connection.
+1736463136: New client connected from 172.19.0.4:37100 as middleware-subscriber (p2, c1, k60).
+1736463137: New connection from 172.19.0.5:45254 on port 1883.
+1736463137: Client middleware-subscriber already connected, closing old connection.
+1736463137: New client connected from 172.19.0.5:45254 as middleware-subscriber (p2, c1, k60).
+1736463138: New connection from 172.19.0.4:59888 on port 1883.
+1736463138: Client middleware-subscriber already connected, closing old connection.
+1736463138: New client connected from 172.19.0.4:59888 as middleware-subscriber (p2, c1, k60).
+1736463139: New connection from 172.19.0.5:45266 on port 1883.
+1736463140: Client middleware-subscriber already connected, closing old connection.
+1736463140: New client connected from 172.19.0.5:45266 as middleware-subscriber (p2, c1, k60).
+1736463141: New connection from 172.19.0.4:59902 on port 1883.
+1736463141: Client middleware-subscriber already connected, closing old connection.
+1736463141: New client connected from 172.19.0.4:59902 as middleware-subscriber (p2, c1, k60).
+1736463142: New connection from 172.19.0.5:45270 on port 1883.
+1736463142: Client middleware-subscriber already connected, closing old connection.
+1736463142: New client connected from 172.19.0.5:45270 as middleware-subscriber (p2, c1, k60).
+1736463143: New connection from 172.19.0.4:59906 on port 1883.
+1736463143: Client middleware-subscriber already connected, closing old connection.
+1736463143: New client connected from 172.19.0.4:59906 as middleware-subscriber (p2, c1, k60).
+1736463144: New connection from 172.19.0.5:45284 on port 1883.
+1736463145: Client middleware-subscriber already connected, closing old connection.
+1736463145: New client connected from 172.19.0.5:45284 as middleware-subscriber (p2, c1, k60).
+1736463146: New connection from 172.19.0.4:59912 on port 1883.
+1736463146: Client middleware-subscriber already connected, closing old connection.
+1736463146: New client connected from 172.19.0.4:59912 as middleware-subscriber (p2, c1, k60).
+1736463147: New connection from 172.19.0.5:39334 on port 1883.
+1736463147: Client middleware-subscriber already connected, closing old connection.
+1736463147: New client connected from 172.19.0.5:39334 as middleware-subscriber (p2, c1, k60).
+1736463148: New connection from 172.19.0.4:60352 on port 1883.
+1736463149: Client middleware-subscriber already connected, closing old connection.
+1736463149: New client connected from 172.19.0.4:60352 as middleware-subscriber (p2, c1, k60).
+1736463150: New connection from 172.19.0.5:39346 on port 1883.
+1736463150: Client middleware-subscriber already connected, closing old connection.
+1736463150: New client connected from 172.19.0.5:39346 as middleware-subscriber (p2, c1, k60).
+1736463151: New connection from 172.19.0.4:60360 on port 1883.
+1736463151: Client middleware-subscriber already connected, closing old connection.
+1736463151: New client connected from 172.19.0.4:60360 as middleware-subscriber (p2, c1, k60).
+1736463152: New connection from 172.19.0.5:39354 on port 1883.
+1736463153: Client middleware-subscriber already connected, closing old connection.
+1736463153: New client connected from 172.19.0.5:39354 as middleware-subscriber (p2, c1, k60).
+1736463154: New connection from 172.19.0.4:60362 on port 1883.
+1736463154: Client middleware-subscriber already connected, closing old connection.
+1736463154: New client connected from 172.19.0.4:60362 as middleware-subscriber (p2, c1, k60).
+1736463155: New connection from 172.19.0.5:39366 on port 1883.
+1736463155: Client middleware-subscriber already connected, closing old connection.
+1736463155: New client connected from 172.19.0.5:39366 as middleware-subscriber (p2, c1, k60).
+1736463156: New connection from 172.19.0.4:51884 on port 1883.
+1736463157: Client middleware-subscriber already connected, closing old connection.
+1736463157: New client connected from 172.19.0.4:51884 as middleware-subscriber (p2, c1, k60).
+1736463158: New connection from 172.19.0.5:47618 on port 1883.
+1736463158: Client middleware-subscriber already connected, closing old connection.
+1736463158: New client connected from 172.19.0.5:47618 as middleware-subscriber (p2, c1, k60).
+1736463159: New connection from 172.19.0.4:51896 on port 1883.
+1736463159: Client middleware-subscriber already connected, closing old connection.
+1736463159: New client connected from 172.19.0.4:51896 as middleware-subscriber (p2, c1, k60).
+1736463160: New connection from 172.19.0.5:47632 on port 1883.
+1736463160: Client middleware-subscriber already connected, closing old connection.
+1736463160: New client connected from 172.19.0.5:47632 as middleware-subscriber (p2, c1, k60).
+1736463161: New connection from 172.19.0.4:51908 on port 1883.
+1736463162: Client middleware-subscriber already connected, closing old connection.
+1736463162: New client connected from 172.19.0.4:51908 as middleware-subscriber (p2, c1, k60).
+1736463163: New connection from 172.19.0.5:47648 on port 1883.
+1736463163: Client middleware-subscriber already connected, closing old connection.
+1736463163: New client connected from 172.19.0.5:47648 as middleware-subscriber (p2, c1, k60).
+1736463164: New connection from 172.19.0.4:51924 on port 1883.
+1736463164: Client middleware-subscriber already connected, closing old connection.
+1736463164: New client connected from 172.19.0.4:51924 as middleware-subscriber (p2, c1, k60).
+1736463165: New connection from 172.19.0.5:47652 on port 1883.
+1736463166: Client middleware-subscriber already connected, closing old connection.
+1736463166: New client connected from 172.19.0.5:47652 as middleware-subscriber (p2, c1, k60).
+1736463167: New connection from 172.19.0.4:33142 on port 1883.
+1736463167: Client middleware-subscriber already connected, closing old connection.
+1736463167: New client connected from 172.19.0.4:33142 as middleware-subscriber (p2, c1, k60).
+1736463168: New connection from 172.19.0.5:55434 on port 1883.
+1736463168: Client middleware-subscriber already connected, closing old connection.
+1736463168: New client connected from 172.19.0.5:55434 as middleware-subscriber (p2, c1, k60).
+1736463169: New connection from 172.19.0.4:33154 on port 1883.
+1736463170: Client middleware-subscriber already connected, closing old connection.
+1736463170: New client connected from 172.19.0.4:33154 as middleware-subscriber (p2, c1, k60).
+1736463171: New connection from 172.19.0.5:55450 on port 1883.
+1736463171: Client middleware-subscriber already connected, closing old connection.
+1736463171: New client connected from 172.19.0.5:55450 as middleware-subscriber (p2, c1, k60).
+1736463172: New connection from 172.19.0.4:33158 on port 1883.
+1736463172: Client middleware-subscriber already connected, closing old connection.
+1736463172: New client connected from 172.19.0.4:33158 as middleware-subscriber (p2, c1, k60).
+1736463173: New connection from 172.19.0.5:55462 on port 1883.
+1736463174: Client middleware-subscriber already connected, closing old connection.
+1736463174: New client connected from 172.19.0.5:55462 as middleware-subscriber (p2, c1, k60).
+1736463175: New connection from 172.19.0.4:33166 on port 1883.
+1736463175: Client middleware-subscriber already connected, closing old connection.
+1736463175: New client connected from 172.19.0.4:33166 as middleware-subscriber (p2, c1, k60).
+1736463176: New connection from 172.19.0.5:55474 on port 1883.
+1736463176: Client middleware-subscriber already connected, closing old connection.
+1736463176: New client connected from 172.19.0.5:55474 as middleware-subscriber (p2, c1, k60).
+1736463177: New connection from 172.19.0.4:44796 on port 1883.
+1736463177: Client middleware-subscriber already connected, closing old connection.
+1736463177: New client connected from 172.19.0.4:44796 as middleware-subscriber (p2, c1, k60).
+1736463178: New connection from 172.19.0.5:46826 on port 1883.
+1736463179: Client middleware-subscriber already connected, closing old connection.
+1736463179: New client connected from 172.19.0.5:46826 as middleware-subscriber (p2, c1, k60).
+1736463180: New connection from 172.19.0.4:44800 on port 1883.
+1736463180: Client middleware-subscriber already connected, closing old connection.
+1736463180: New client connected from 172.19.0.4:44800 as middleware-subscriber (p2, c1, k60).
+1736463181: New connection from 172.19.0.5:46836 on port 1883.
+1736463181: Client middleware-subscriber already connected, closing old connection.
+1736463181: New client connected from 172.19.0.5:46836 as middleware-subscriber (p2, c1, k60).
+1736463182: New connection from 172.19.0.4:44802 on port 1883.
+1736463183: Client middleware-subscriber already connected, closing old connection.
+1736463183: New client connected from 172.19.0.4:44802 as middleware-subscriber (p2, c1, k60).
+1736463184: New connection from 172.19.0.5:46848 on port 1883.
+1736463184: Client middleware-subscriber already connected, closing old connection.
+1736463184: New client connected from 172.19.0.5:46848 as middleware-subscriber (p2, c1, k60).
+1736463185: New connection from 172.19.0.4:44810 on port 1883.
+1736463185: Client middleware-subscriber already connected, closing old connection.
+1736463185: New client connected from 172.19.0.4:44810 as middleware-subscriber (p2, c1, k60).
+1736463186: New connection from 172.19.0.5:37042 on port 1883.
+1736463187: Client middleware-subscriber already connected, closing old connection.
+1736463187: New client connected from 172.19.0.5:37042 as middleware-subscriber (p2, c1, k60).
+1736463188: New connection from 172.19.0.4:39494 on port 1883.
+1736463188: Client middleware-subscriber already connected, closing old connection.
+1736463188: New client connected from 172.19.0.4:39494 as middleware-subscriber (p2, c1, k60).
+1736463189: New connection from 172.19.0.5:37052 on port 1883.
+1736463189: Client middleware-subscriber already connected, closing old connection.
+1736463189: New client connected from 172.19.0.5:37052 as middleware-subscriber (p2, c1, k60).
+1736463190: New connection from 172.19.0.4:39508 on port 1883.
+1736463191: Client middleware-subscriber already connected, closing old connection.
+1736463191: New client connected from 172.19.0.4:39508 as middleware-subscriber (p2, c1, k60).
+1736463192: New connection from 172.19.0.5:37056 on port 1883.
+1736463192: Client middleware-subscriber already connected, closing old connection.
+1736463192: New client connected from 172.19.0.5:37056 as middleware-subscriber (p2, c1, k60).
+1736463193: New connection from 172.19.0.4:39518 on port 1883.
+1736463193: Client middleware-subscriber already connected, closing old connection.
+1736463193: New client connected from 172.19.0.4:39518 as middleware-subscriber (p2, c1, k60).
+1736463194: New connection from 172.19.0.5:37066 on port 1883.
+1736463194: Client middleware-subscriber already connected, closing old connection.
+1736463194: New client connected from 172.19.0.5:37066 as middleware-subscriber (p2, c1, k60).
+1736463195: New connection from 172.19.0.4:39532 on port 1883.
+1736463196: Client middleware-subscriber already connected, closing old connection.
+1736463196: New client connected from 172.19.0.4:39532 as middleware-subscriber (p2, c1, k60).
+1736463197: New connection from 172.19.0.5:37440 on port 1883.
+1736463197: Client middleware-subscriber already connected, closing old connection.
+1736463197: New client connected from 172.19.0.5:37440 as middleware-subscriber (p2, c1, k60).
+1736463198: New connection from 172.19.0.4:45590 on port 1883.
+1736463198: Client middleware-subscriber already connected, closing old connection.
+1736463198: New client connected from 172.19.0.4:45590 as middleware-subscriber (p2, c1, k60).
+1736463199: New connection from 172.19.0.5:37450 on port 1883.
+1736463200: Client middleware-subscriber already connected, closing old connection.
+1736463200: New client connected from 172.19.0.5:37450 as middleware-subscriber (p2, c1, k60).
+1736463201: New connection from 172.19.0.4:45596 on port 1883.
+1736463201: Client middleware-subscriber already connected, closing old connection.
+1736463201: New client connected from 172.19.0.4:45596 as middleware-subscriber (p2, c1, k60).
+1736463202: New connection from 172.19.0.5:37456 on port 1883.
+1736463202: Client middleware-subscriber already connected, closing old connection.
+1736463202: New client connected from 172.19.0.5:37456 as middleware-subscriber (p2, c1, k60).
+1736463203: New connection from 172.19.0.4:45606 on port 1883.
+1736463204: Client middleware-subscriber already connected, closing old connection.
+1736463204: New client connected from 172.19.0.4:45606 as middleware-subscriber (p2, c1, k60).
+1736463205: New connection from 172.19.0.5:37462 on port 1883.
+1736463205: Client middleware-subscriber already connected, closing old connection.
+1736463205: New client connected from 172.19.0.5:37462 as middleware-subscriber (p2, c1, k60).
+1736463206: New connection from 172.19.0.4:45618 on port 1883.
+1736463206: Client middleware-subscriber already connected, closing old connection.
+1736463206: New client connected from 172.19.0.4:45618 as middleware-subscriber (p2, c1, k60).
+1736463207: New connection from 172.19.0.5:52956 on port 1883.
+1736463208: Client middleware-subscriber already connected, closing old connection.
+1736463208: New client connected from 172.19.0.5:52956 as middleware-subscriber (p2, c1, k60).
+1736463209: New connection from 172.19.0.4:39958 on port 1883.
+1736463209: Client middleware-subscriber already connected, closing old connection.
+1736463209: New client connected from 172.19.0.4:39958 as middleware-subscriber (p2, c1, k60).
+1736463210: New connection from 172.19.0.5:52968 on port 1883.
+1736463210: Client middleware-subscriber already connected, closing old connection.
+1736463210: New client connected from 172.19.0.5:52968 as middleware-subscriber (p2, c1, k60).
+1736463211: New connection from 172.19.0.4:39964 on port 1883.
+1736463211: Client middleware-subscriber already connected, closing old connection.
+1736463211: New client connected from 172.19.0.4:39964 as middleware-subscriber (p2, c1, k60).
+1736463212: New connection from 172.19.0.5:52980 on port 1883.
+1736463213: Client middleware-subscriber already connected, closing old connection.
+1736463213: New client connected from 172.19.0.5:52980 as middleware-subscriber (p2, c1, k60).
+1736463214: New connection from 172.19.0.4:39968 on port 1883.
+1736463214: Client middleware-subscriber already connected, closing old connection.
+1736463214: New client connected from 172.19.0.4:39968 as middleware-subscriber (p2, c1, k60).
+1736463215: New connection from 172.19.0.5:52994 on port 1883.
+1736463215: Client middleware-subscriber already connected, closing old connection.
+1736463215: New client connected from 172.19.0.5:52994 as middleware-subscriber (p2, c1, k60).
+1736463216: New connection from 172.19.0.4:44962 on port 1883.
+1736463217: Client middleware-subscriber already connected, closing old connection.
+1736463217: New client connected from 172.19.0.4:44962 as middleware-subscriber (p2, c1, k60).
+1736463218: New connection from 172.19.0.5:38952 on port 1883.
+1736463218: Client middleware-subscriber already connected, closing old connection.
+1736463218: New client connected from 172.19.0.5:38952 as middleware-subscriber (p2, c1, k60).
+1736463219: New connection from 172.19.0.4:44970 on port 1883.
+1736463219: Client middleware-subscriber already connected, closing old connection.
+1736463219: New client connected from 172.19.0.4:44970 as middleware-subscriber (p2, c1, k60).
+1736463220: New connection from 172.19.0.5:38960 on port 1883.
+1736463221: Client middleware-subscriber already connected, closing old connection.
+1736463221: New client connected from 172.19.0.5:38960 as middleware-subscriber (p2, c1, k60).
+1736463222: New connection from 172.19.0.4:44972 on port 1883.
+1736463222: Client middleware-subscriber already connected, closing old connection.
+1736463222: New client connected from 172.19.0.4:44972 as middleware-subscriber (p2, c1, k60).
+1736463223: New connection from 172.19.0.5:38974 on port 1883.
+1736463223: Client middleware-subscriber already connected, closing old connection.
+1736463223: New client connected from 172.19.0.5:38974 as middleware-subscriber (p2, c1, k60).
+1736463224: New connection from 172.19.0.4:44978 on port 1883.
+1736463225: Client middleware-subscriber already connected, closing old connection.
+1736463225: New client connected from 172.19.0.4:44978 as middleware-subscriber (p2, c1, k60).
+1736463226: New connection from 172.19.0.5:38986 on port 1883.
+1736463226: Client middleware-subscriber already connected, closing old connection.
+1736463226: New client connected from 172.19.0.5:38986 as middleware-subscriber (p2, c1, k60).
+1736463227: New connection from 172.19.0.4:58674 on port 1883.
+1736463227: Client middleware-subscriber already connected, closing old connection.
+1736463227: New client connected from 172.19.0.4:58674 as middleware-subscriber (p2, c1, k60).
+1736463228: New connection from 172.19.0.5:55120 on port 1883.
+1736463228: Client middleware-subscriber already connected, closing old connection.
+1736463228: New client connected from 172.19.0.5:55120 as middleware-subscriber (p2, c1, k60).
+1736463229: New connection from 172.19.0.4:58690 on port 1883.
+1736463230: Client middleware-subscriber already connected, closing old connection.
+1736463230: New client connected from 172.19.0.4:58690 as middleware-subscriber (p2, c1, k60).
+1736463231: New connection from 172.19.0.5:55134 on port 1883.
+1736463231: Client middleware-subscriber already connected, closing old connection.
+1736463231: New client connected from 172.19.0.5:55134 as middleware-subscriber (p2, c1, k60).
+1736463232: New connection from 172.19.0.4:58698 on port 1883.
+1736463232: Client middleware-subscriber already connected, closing old connection.
+1736463232: New client connected from 172.19.0.4:58698 as middleware-subscriber (p2, c1, k60).
+1736463233: New connection from 172.19.0.5:55146 on port 1883.
+1736463234: Client middleware-subscriber already connected, closing old connection.
+1736463234: New client connected from 172.19.0.5:55146 as middleware-subscriber (p2, c1, k60).
+1736463235: New connection from 172.19.0.4:58712 on port 1883.
+1736463235: Client middleware-subscriber already connected, closing old connection.
+1736463235: New client connected from 172.19.0.4:58712 as middleware-subscriber (p2, c1, k60).
+1736463236: New connection from 172.19.0.5:55154 on port 1883.
+1736463236: Client middleware-subscriber already connected, closing old connection.
+1736463236: New client connected from 172.19.0.5:55154 as middleware-subscriber (p2, c1, k60).
+1736463237: New connection from 172.19.0.4:59722 on port 1883.
+1736463238: Client middleware-subscriber already connected, closing old connection.
+1736463238: New client connected from 172.19.0.4:59722 as middleware-subscriber (p2, c1, k60).
+1736463239: New connection from 172.19.0.5:57758 on port 1883.
+1736463239: Client middleware-subscriber already connected, closing old connection.
+1736463239: New client connected from 172.19.0.5:57758 as middleware-subscriber (p2, c1, k60).
+1736463240: New connection from 172.19.0.4:59732 on port 1883.
+1736463240: Client middleware-subscriber already connected, closing old connection.
+1736463240: New client connected from 172.19.0.4:59732 as middleware-subscriber (p2, c1, k60).
+1736463241: New connection from 172.19.0.5:57762 on port 1883.
+1736463242: Client middleware-subscriber already connected, closing old connection.
+1736463242: New client connected from 172.19.0.5:57762 as middleware-subscriber (p2, c1, k60).
+1736463243: New connection from 172.19.0.4:59738 on port 1883.
+1736463243: Client middleware-subscriber already connected, closing old connection.
+1736463243: New client connected from 172.19.0.4:59738 as middleware-subscriber (p2, c1, k60).
+1736463244: New connection from 172.19.0.5:57764 on port 1883.
+1736463244: Client middleware-subscriber already connected, closing old connection.
+1736463244: New client connected from 172.19.0.5:57764 as middleware-subscriber (p2, c1, k60).
+1736463245: New connection from 172.19.0.4:59748 on port 1883.
+1736463245: Client middleware-subscriber already connected, closing old connection.
+1736463245: New client connected from 172.19.0.4:59748 as middleware-subscriber (p2, c1, k60).
+1736463246: New connection from 172.19.0.5:38044 on port 1883.
+1736463247: Client middleware-subscriber already connected, closing old connection.
+1736463247: New client connected from 172.19.0.5:38044 as middleware-subscriber (p2, c1, k60).
+1736463248: New connection from 172.19.0.4:60454 on port 1883.
+1736463248: Client middleware-subscriber already connected, closing old connection.
+1736463248: New client connected from 172.19.0.4:60454 as middleware-subscriber (p2, c1, k60).
+1736463249: New connection from 172.19.0.5:38046 on port 1883.
+1736463249: Client middleware-subscriber already connected, closing old connection.
+1736463249: New client connected from 172.19.0.5:38046 as middleware-subscriber (p2, c1, k60).
+1736463250: New connection from 172.19.0.4:60460 on port 1883.
+1736463251: Client middleware-subscriber already connected, closing old connection.
+1736463251: New client connected from 172.19.0.4:60460 as middleware-subscriber (p2, c1, k60).
+1736463252: New connection from 172.19.0.5:38054 on port 1883.
+1736463252: Client middleware-subscriber already connected, closing old connection.
+1736463252: New client connected from 172.19.0.5:38054 as middleware-subscriber (p2, c1, k60).
+1736463253: New connection from 172.19.0.4:60464 on port 1883.
+1736463253: Client middleware-subscriber already connected, closing old connection.
+1736463253: New client connected from 172.19.0.4:60464 as middleware-subscriber (p2, c1, k60).
+1736463254: New connection from 172.19.0.5:38060 on port 1883.
+1736463255: Client middleware-subscriber already connected, closing old connection.
+1736463255: New client connected from 172.19.0.5:38060 as middleware-subscriber (p2, c1, k60).
+1736463256: New connection from 172.19.0.4:60474 on port 1883.
+1736463256: Client middleware-subscriber already connected, closing old connection.
+1736463256: New client connected from 172.19.0.4:60474 as middleware-subscriber (p2, c1, k60).
+1736463257: New connection from 172.19.0.5:37602 on port 1883.
+1736463257: Client middleware-subscriber already connected, closing old connection.
+1736463257: New client connected from 172.19.0.5:37602 as middleware-subscriber (p2, c1, k60).
+1736463258: New connection from 172.19.0.4:40428 on port 1883.
+1736463259: Client middleware-subscriber already connected, closing old connection.
+1736463259: New client connected from 172.19.0.4:40428 as middleware-subscriber (p2, c1, k60).
+1736463260: New connection from 172.19.0.5:37614 on port 1883.
+1736463260: Client middleware-subscriber already connected, closing old connection.
+1736463260: New client connected from 172.19.0.5:37614 as middleware-subscriber (p2, c1, k60).
+1736463261: New connection from 172.19.0.4:40430 on port 1883.
+1736463261: Client middleware-subscriber already connected, closing old connection.
+1736463261: New client connected from 172.19.0.4:40430 as middleware-subscriber (p2, c1, k60).
+1736463262: New connection from 172.19.0.5:37622 on port 1883.
+1736463262: Client middleware-subscriber already connected, closing old connection.
+1736463262: New client connected from 172.19.0.5:37622 as middleware-subscriber (p2, c1, k60).
+1736463263: New connection from 172.19.0.4:40436 on port 1883.
+1736463264: Client middleware-subscriber already connected, closing old connection.
+1736463264: New client connected from 172.19.0.4:40436 as middleware-subscriber (p2, c1, k60).
+1736463265: New connection from 172.19.0.5:37630 on port 1883.
+1736463265: Client middleware-subscriber already connected, closing old connection.
+1736463265: New client connected from 172.19.0.5:37630 as middleware-subscriber (p2, c1, k60).
+1736463266: New connection from 172.19.0.4:44512 on port 1883.
+1736463266: Client middleware-subscriber already connected, closing old connection.
+1736463266: New client connected from 172.19.0.4:44512 as middleware-subscriber (p2, c1, k60).
+1736463267: New connection from 172.19.0.5:56948 on port 1883.
+1736463268: Client middleware-subscriber already connected, closing old connection.
+1736463268: New client connected from 172.19.0.5:56948 as middleware-subscriber (p2, c1, k60).
+1736463269: New connection from 172.19.0.4:44518 on port 1883.
+1736463269: Client middleware-subscriber already connected, closing old connection.
+1736463269: New client connected from 172.19.0.4:44518 as middleware-subscriber (p2, c1, k60).
+1736463270: Client middleware-subscriber disconnected.
+1736463280: mosquitto version 2.0.20 terminating
+1736463280: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1736464300: mosquitto version 2.0.20 starting
+1736464300: Config loaded from /mosquitto/config/mosquitto.conf.
+1736464300: Opening ipv4 listen socket on port 1883.
+1736464300: Opening ipv6 listen socket on port 1883.
+1736464300: mosquitto version 2.0.20 running
+1736464375: New connection from 172.19.0.4:45122 on port 1883.
+1736464376: New client connected from 172.19.0.4:45122 as middleware-subscriber-2835096899322 (p2, c1, k60).
+1736464376: New connection from 172.19.0.5:43494 on port 1883.
+1736464376: New client connected from 172.19.0.5:43494 as middleware-subscriber-2835843085396 (p2, c1, k60).
+1736464837: New connection from 172.19.0.1:54850 on port 1883.
+1736464837: New client connected from 172.19.0.1:54850 as auto-8AAD5C19-AF15-AE30-9C28-475E439FFAD7 (p2, c1, k60).
+1736464837: Client auto-8AAD5C19-AF15-AE30-9C28-475E439FFAD7 disconnected.
+1736464837: New connection from 172.19.0.5:42882 on port 1883.
+1736464837: New connection from 172.19.0.4:42968 on port 1883.
+1736464837: New client connected from 172.19.0.5:42882 as middleware-publisher-2836010193495 (p2, c1, k60).
+1736464837: New client connected from 172.19.0.4:42968 as middleware-publisher-2835299958839 (p2, c1, k60).
+1736464907: New connection from 172.19.0.1:45468 on port 1883.
+1736464907: New client connected from 172.19.0.1:45468 as auto-EFC26538-F8B2-5284-6F89-3B8930D92F05 (p2, c1, k60).
+1736464907: Client auto-EFC26538-F8B2-5284-6F89-3B8930D92F05 disconnected.
+1736464994: Client middleware-subscriber-2835843085396 disconnected.
+1736464994: Client middleware-subscriber-2835096899322 disconnected.
+1736464999: Client middleware-publisher-2835299958839 disconnected.
+1736464999: Client middleware-publisher-2836010193495 disconnected.
+1736465004: mosquitto version 2.0.20 terminating
+1736465004: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1736465015: mosquitto version 2.0.20 starting
+1736465015: Config loaded from /mosquitto/config/mosquitto.conf.
+1736465015: Opening ipv4 listen socket on port 1883.
+1736465015: Opening ipv6 listen socket on port 1883.
+1736465015: mosquitto version 2.0.20 running
+1736465094: New connection from 172.19.0.5:51220 on port 1883.
+1736465094: New connection from 172.19.0.4:32908 on port 1883.
+1736465094: New client connected from 172.19.0.5:51220 as middleware-subscriber-3553628475036 (p2, c1, k60).
+1736465095: New client connected from 172.19.0.4:32908 as middleware-subscriber-3554549864015 (p2, c1, k60).
+1736465136: Client middleware-subscriber-3554549864015 disconnected.
+1736465136: Client middleware-subscriber-3553628475036 disconnected.
+1736465146: mosquitto version 2.0.20 terminating
+1736465146: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1736465468: mosquitto version 2.0.20 starting
+1736465468: Config loaded from /mosquitto/config/mosquitto.conf.
+1736465468: Opening ipv4 listen socket on port 1883.
+1736465468: Opening ipv6 listen socket on port 1883.
+1736465468: mosquitto version 2.0.20 running
+1736465541: New connection from 172.19.0.4:60878 on port 1883.
+1736465541: New client connected from 172.19.0.4:60878 as middleware-subscriber-4002975747372 (p2, c1, k60).
+1736465542: New connection from 172.19.0.5:50564 on port 1883.
+1736465542: New client connected from 172.19.0.5:50564 as middleware-subscriber-4003762230093 (p2, c1, k60).
+1736465559: Client middleware-subscriber-4003762230093 disconnected.
+1736465559: Client middleware-subscriber-4002975747372 disconnected.
+1736465570: mosquitto version 2.0.20 terminating
+1736465570: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1736465700: mosquitto version 2.0.20 starting
+1736465700: Config loaded from /mosquitto/config/mosquitto.conf.
+1736465700: Opening ipv4 listen socket on port 1883.
+1736465700: Opening ipv6 listen socket on port 1883.
+1736465700: mosquitto version 2.0.20 running
+1736465780: New connection from 172.19.0.4:33956 on port 1883.
+1736465780: New client connected from 172.19.0.4:33956 as middleware-subscriber-4241004318285 (p2, c1, k60).
+1736465781: Client middleware-subscriber-4241004318285 disconnected.
+1736465782: New connection from 172.19.0.5:51516 on port 1883.
+1736465783: New client connected from 172.19.0.5:51516 as middleware-subscriber-4242644830905 (p2, c1, k60).
+1736465783: Client middleware-subscriber-4242644830905 disconnected.
+1736465790: mosquitto version 2.0.20 terminating
+1736465790: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1736465818: mosquitto version 2.0.20 starting
+1736465818: Config loaded from /mosquitto/config/mosquitto.conf.
+1736465818: Opening ipv4 listen socket on port 1883.
+1736465818: Opening ipv6 listen socket on port 1883.
+1736465818: mosquitto version 2.0.20 running
+1736465896: New connection from 172.19.0.4:55328 on port 1883.
+1736465896: New connection from 172.19.0.5:38942 on port 1883.
+1736465896: New client connected from 172.19.0.4:55328 as middleware-subscriber-4355603957418 (p2, c1, k60).
+1736465896: New client connected from 172.19.0.5:38942 as middleware-subscriber-4355759368377 (p2, c1, k60).
+1736465911: Client middleware-subscriber-4355759368377 disconnected.
+1736465911: Client middleware-subscriber-4355603957418 disconnected.
+1736465920: mosquitto version 2.0.20 terminating
+1736465920: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1736466154: mosquitto version 2.0.20 starting
+1736466154: Config loaded from /mosquitto/config/mosquitto.conf.
+1736466154: Opening ipv4 listen socket on port 1883.
+1736466154: Opening ipv6 listen socket on port 1883.
+1736466154: mosquitto version 2.0.20 running
+1736466232: New connection from 172.19.0.4:36208 on port 1883.
+1736466232: New client connected from 172.19.0.4:36208 as middleware-subscriber-4691601217310 (p2, c1, k60).
+1736466232: New connection from 172.19.0.5:33964 on port 1883.
+1736466233: New client connected from 172.19.0.5:33964 as middleware-subscriber-4692394475357 (p2, c1, k60).
+1736466247: Client middleware-subscriber-4691601217310 disconnected.
+1736466247: Client middleware-subscriber-4692394475357 disconnected.
+1736466257: mosquitto version 2.0.20 terminating
+1736466257: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1736466322: mosquitto version 2.0.20 starting
+1736466322: Config loaded from /mosquitto/config/mosquitto.conf.
+1736466322: Opening ipv4 listen socket on port 1883.
+1736466322: Opening ipv6 listen socket on port 1883.
+1736466322: mosquitto version 2.0.20 running
+1736466395: New connection from 172.19.0.4:38570 on port 1883.
+1736466395: New client connected from 172.19.0.4:38570 as middleware-subscriber-4856658807482 (p2, c1, k60).
+1736466396: New connection from 172.19.0.5:36242 on port 1883.
+1736466396: New client connected from 172.19.0.5:36242 as middleware-subscriber-4857574955377 (p2, c1, k60).
+1736466660: New connection from 172.19.0.1:35056 on port 1883.
+1736466660: New client connected from 172.19.0.1:35056 as auto-F19C35B4-C115-6BAA-0A69-77698D16D080 (p2, c1, k60).
+1736466660: Client auto-F19C35B4-C115-6BAA-0A69-77698D16D080 disconnected.
+1736466661: New connection from 172.19.0.5:59604 on port 1883.
+1736466661: New connection from 172.19.0.4:56880 on port 1883.
+1736466661: New client connected from 172.19.0.5:59604 as middleware-publisher-4857743256693 (p2, c1, k60).
+1736466661: New client connected from 172.19.0.4:56880 as middleware-publisher-4856822337840 (p2, c1, k60).
+1736466767: Client middleware-subscriber-4856658807482 disconnected.
+1736466772: Client middleware-publisher-4856822337840 disconnected.
+1736466796: New connection from 172.19.0.1:54174 on port 1883.
+1736466796: New client connected from 172.19.0.1:54174 as auto-35A0EFE4-5986-F7EC-8D14-532F8595A90E (p2, c1, k60).
+1736466796: Client auto-35A0EFE4-5986-F7EC-8D14-532F8595A90E disconnected.
+1736466807: New connection from 172.19.0.1:33870 on port 1883.
+1736466807: New client connected from 172.19.0.1:33870 as auto-3BAAECD1-8798-EEF8-2527-968A1BAC0DE6 (p2, c1, k60).
+1736466807: Client auto-3BAAECD1-8798-EEF8-2527-968A1BAC0DE6 disconnected.
+1736466845: Client middleware-subscriber-4857574955377 disconnected.
+1736466850: Client middleware-publisher-4857743256693 disconnected.
+1736466854: mosquitto version 2.0.20 terminating
+1736466854: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1736467180: mosquitto version 2.0.20 starting
+1736467180: Config loaded from /mosquitto/config/mosquitto.conf.
+1736467180: Opening ipv4 listen socket on port 1883.
+1736467180: Opening ipv6 listen socket on port 1883.
+1736467180: mosquitto version 2.0.20 running
+1736467257: New connection from 172.19.0.4:48596 on port 1883.
+1736467257: New client connected from 172.19.0.4:48596 as middleware-subscriber-5717511746078 (p2, c1, k60).
+1736467258: New connection from 172.19.0.5:33340 on port 1883.
+1736467258: New client connected from 172.19.0.5:33340 as middleware-subscriber-5719784242572 (p2, c1, k60).
+1736467297: New connection from 172.19.0.1:36536 on port 1883.
+1736467297: New client connected from 172.19.0.1:36536 as auto-71568215-DB26-4037-3BA0-334A19327707 (p2, c1, k60).
+1736467297: Client auto-71568215-DB26-4037-3BA0-334A19327707 disconnected.
+1736467297: New connection from 172.19.0.5:44276 on port 1883.
+1736467297: New connection from 172.19.0.4:49504 on port 1883.
+1736467298: New client connected from 172.19.0.5:44276 as middleware-publisher-5720001088616 (p2, c1, k60).
+1736467298: New client connected from 172.19.0.4:49504 as middleware-publisher-5717691986694 (p2, c1, k60).
+1736467369: New connection from 172.19.0.1:55578 on port 1883.
+1736467369: New client connected from 172.19.0.1:55578 as auto-BF3B1F2B-D525-C6AD-B301-FB43ED748804 (p2, c1, k60).
+1736467369: Client auto-BF3B1F2B-D525-C6AD-B301-FB43ED748804 disconnected.
+1736467383: New connection from 172.19.0.1:33998 on port 1883.
+1736467383: New client connected from 172.19.0.1:33998 as auto-649187E0-5666-87EF-393C-592878B92933 (p2, c1, k60).
+1736467383: Client auto-649187E0-5666-87EF-393C-592878B92933 disconnected.
+1736468801: Client middleware-subscriber-5719784242572 disconnected.
+1736468801: Client middleware-subscriber-5717511746078 disconnected.
+1736468806: Client middleware-publisher-5717691986694 disconnected.
+1736468806: Client middleware-publisher-5720001088616 disconnected.
+1736468811: mosquitto version 2.0.20 terminating
+1736468811: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1736469099: mosquitto version 2.0.20 starting
+1736469099: Config loaded from /mosquitto/config/mosquitto.conf.
+1736469099: Opening ipv4 listen socket on port 1883.
+1736469099: Opening ipv6 listen socket on port 1883.
+1736469099: mosquitto version 2.0.20 running
+1736469176: New connection from 172.19.0.4:35534 on port 1883.
+1736469176: New client connected from 172.19.0.4:35534 as middleware-subscriber-7636153856427 (p2, c1, k60).
+1736469178: New connection from 172.19.0.5:55664 on port 1883.
+1736469178: New client connected from 172.19.0.5:55664 as middleware-subscriber-7638135719990 (p2, c1, k60).
+1736469234: Client middleware-subscriber-7638135719990 disconnected.
+1736469234: Client middleware-subscriber-7636153856427 disconnected.
+1736469244: mosquitto version 2.0.20 terminating
+1736469244: Saving in-memory database to /mosquitto/data//mosquitto.db.
