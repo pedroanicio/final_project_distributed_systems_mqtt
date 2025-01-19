@@ -1,8 +1,8 @@
 import hashlib #criar hashes para cada bloco
 import json # codificar e decodificar blocos quando carrega-los ou armazena-los em um file
-import logging
 from time import time
 from urllib.parse import urlparse
+
 
 import requests #timestamp
 
@@ -18,7 +18,7 @@ class Blockchain:
         # cria um novo bloco na blockchain
         block = {
             'index': len(self.chain) + 1,
-            'timestamp': time(),
+            #'timestamp': time(),
             'transactions': self.current_transactions,
             'proof': proof,
             'previous_hash': previous_hash or self.hash(self.chain[-1])
@@ -34,13 +34,25 @@ class Blockchain:
     
     def new_transaction(self, sender, recipient, amount):
         # Adds a new transaction to the list of transactions to be included in the next block.
+
         self.current_transactions.append({
             'sender': sender,
             'recipient':recipient,
             'amount': amount
         })
+        
+        # Verifica se o número de transações é igual a 3
+        if len(self.current_transactions) == 3:
+            self.auto_mine()
 
         return self.last_block['index'] + 1
+    
+    def auto_mine(self):
+        last_block = self.last_block
+        proof = self.proof_of_work(last_block)
+        previous_hash = self.hash(last_block)
+        block = self.new_block(proof, previous_hash)
+
 
     @staticmethod
     def hash(block):
@@ -105,13 +117,79 @@ class Blockchain:
         print("Cadeia válida.")
         return True
 
-
-
-
+    
     def resolve_conflicts(self):
+
+        # implementada a logica do consenso 50% + 1
+
         neighbours = self.nodes
         new_chain = None
-        max_length = len(self.chain)  # Começar com o comprimento da nossa cadeia
+        chain_votes = {}
+
+        for node in neighbours:
+            try:
+                url = f'http://localhost:{node}/chain'  # Corrige para garantir a URL correta
+                print(f"Consultando o nó: {url}")
+                response = requests.get(url)
+
+                if response.status_code == 200:
+                    chain = response.json().get('chain')
+
+                    if self.valid_chain(chain):
+                        chain_hash = self.hash_chain(chain)
+                        if chain_hash not in chain_votes:
+                            chain_votes[chain_hash] = {'votes': 0, 'chain': chain}
+                        chain_votes[chain_hash]['votes'] += 1
+            
+            except requests.exceptions.RequestException as e:
+                print(f"Erro ao conectar ao nó {node}: {e}")
+        
+        #determinar cadeia com mais votos
+        max_votes = 0
+        winning_chain = None
+        for chain_hash, data in chain_votes.items():
+            if data['votes'] > max_votes:
+                max_votes = data['votes']
+                winning_chain = data['chain']
+        
+        #verificar se a cadeia vencedoa tem mais de 50% de votos
+        if max_votes > len(neighbours) / 2:
+            print("Substituindo nossa cadeia pela nova.")
+            self.chain = winning_chain
+            return True
+
+        print("Mantendo nossa cadeia atual.")
+        return False
+        
+    def hash_chain(self, chain):
+        # Cria um hash SHA-256 de uma cadeia
+        chain_string = json.dumps(chain, sort_keys=True).encode()
+        return hashlib.sha256(chain_string).hexdigest()
+
+
+    def register_node(self, address):
+        """
+        Adiciona um novo nó à lista de nós.
+        :param address: Endereço do nó. Exemplo: 'http://192.168.0.1:5000'
+        """
+
+        parsed_url = urlparse(address)
+        if parsed_url.netloc:  # Verifica se o endereço tem um host e porta válidos
+            self.nodes.add(parsed_url.netloc)
+        elif parsed_url.path:  # Caso o endereço seja um caminho válido
+            self.nodes.add(parsed_url.path)
+        else:
+            raise ValueError('Endereço inválido')
+    
+
+
+    """
+    deprecated
+    def resolve_conflicts(self):
+        #resolve conflitos substituindo a cadeia pela mais longa da rede.
+
+        neighbours = self.nodes
+        new_chain = None
 
         for node in neighbours:
             try:
@@ -139,19 +217,4 @@ class Blockchain:
 
         print("Mantendo nossa cadeia atual.")
         return False
-
-
-
-
-    def register_node(self, address):
         """
-        Adiciona um novo nó à lista de nós.
-        :param address: Endereço do nó. Exemplo: 'http://192.168.0.1:5000'
-        """
-        parsed_url = urlparse(address)
-        if parsed_url.netloc:  # Verifica se o endereço tem um host e porta válidos
-            self.nodes.add(parsed_url.netloc)
-        elif parsed_url.path:  # Caso o endereço seja um caminho válido
-            self.nodes.add(parsed_url.path)
-        else:
-            raise ValueError('Endereço inválido')

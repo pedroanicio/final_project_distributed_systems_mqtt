@@ -1,9 +1,11 @@
 from uuid import uuid4
 import json
 from flask import Flask, jsonify, request
+from flask_cors import CORS
 from blockchain import Blockchain
 
 app = Flask(__name__)
+CORS(app)
 
 #gerar um endereço unico e global para esse nó
 node_identifier = str(uuid4()).replace('-', '')
@@ -13,32 +15,32 @@ blockchain = Blockchain()
 
 
 # /mine: Extraia um novo bloco e adicione-o ao blockchain.
-@app.route('/mine', methods=['GET'])
-def mine():
+#@app.route('/mine', methods=['GET'])
+#def mine():
     # Obtenha o último bloco
-    last_block = blockchain.last_block
-    
-    proof = blockchain.proof_of_work(last_block)
+#    last_block = blockchain.last_block
+#    
+#    proof = blockchain.proof_of_work(last_block)
 
      # Crie uma nova transação para recompensar o minerador 
-    blockchain.new_transaction(
-        sender="0",
-        recipient=node_identifier,
-        amount=1,
-    )
+#    blockchain.new_transaction(
+#        sender="0",
+#        recipient=node_identifier,
+#        amount=1,
+#    )
 
     # Adicione o novo bloco à cadeia
-    previous_hash = blockchain.hash(last_block)
-    block = blockchain.new_block(proof, previous_hash)
+#    previous_hash = blockchain.hash(last_block)
+#    block = blockchain.new_block(proof, previous_hash)
 
-    response = {
-        'message': "New Block Forged",
-        'index': block['index'],
-        'transactions': block['transactions'],
-        'proof': block['proof'],
-        'previous_hash': block['previous_hash'],
-    }
-    return jsonify(response), 200
+#    response = {
+#        'message': "New Block Forged",
+#        'index': block['index'],
+#        'transactions': block['transactions'],
+#        'proof': block['proof'],
+#        'previous_hash': block['previous_hash'],
+#    }
+#    return jsonify(response), 200
 
 
 # /transactions/new: rota para criar nova transação e adiciona para a lista de transacoes 
@@ -104,4 +106,8 @@ def consensus():
     return jsonify(response), 200
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=6001)
+
+    blockchain.register_node('localhost:5000')
+    blockchain.register_node('localhost:5002')
+    blockchain.register_node('localhost:5003')
+    app.run(host='0.0.0.0', port=5001)
