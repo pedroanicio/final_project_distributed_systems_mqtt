@@ -24,5 +24,6 @@ public class EventProcessor {
         if (eventType.equals("smoke") && value.equalsIgnoreCase("detected")) {
             actuatorCommandService.sendCommand("water_actuator", "ON", "");
         }
+
     }
 }

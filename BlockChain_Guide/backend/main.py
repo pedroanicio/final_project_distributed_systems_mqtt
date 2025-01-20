@@ -1,9 +1,12 @@
 
 import os
+import threading
+from time import sleep
 from uuid import uuid4
 import json
 from flask import Flask, jsonify, request
 from flask_cors import CORS
+import schedule
 from blockchain import Blockchain
 
 app = Flask(__name__)
@@ -107,6 +110,12 @@ def consensus():
 
     return jsonify(response), 200
 
+def run_scheduler():
+    while True:
+        schedule.run_pending()
+        sleep(1)
+
+
 if __name__ == '__main__':
 
     porta = int(os.environ.get('PORT', 5000))
@@ -115,4 +124,13 @@ if __name__ == '__main__':
     blockchain.register_node('app2:5000')
     blockchain.register_node('app3:5000')
     blockchain.register_node('app4:5000')
+
+    sleep(10)
+    
+    schedule.every(5).seconds.do(blockchain.resolve_conflicts)
+    
+    scheduler_thread = threading.Thread(target=run_scheduler)
+    scheduler_thread.daemon = True
+    scheduler_thread.start()
+
     app.run(host='0.0.0.0', port=porta)

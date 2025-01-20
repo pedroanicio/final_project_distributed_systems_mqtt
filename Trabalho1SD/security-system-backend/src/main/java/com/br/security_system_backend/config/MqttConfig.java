@@ -16,35 +16,39 @@ import org.springframework.messaging.MessageHandler;
 @Configuration
 public class MqttConfig {
 
+    // Configuração de conexão com o broker MQTT
     @Bean
     public MqttPahoClientFactory mqttClientFactory() {
-        DefaultMqttPahoClientFactory factory = new DefaultMqttPahoClientFactory();
-        MqttConnectOptions options = new MqttConnectOptions();
-        options.setServerURIs(new String[]{"tcp://mqtt:1883"});
-        //tcp://127.0.0.1:1883
-        options.setAutomaticReconnect(true);
+        DefaultMqttPahoClientFactory factory = new DefaultMqttPahoClientFactory(); // cria um cliente mqtt
+        MqttConnectOptions options = new MqttConnectOptions(); // cria um objeto de configuração
+        options.setServerURIs(new String[]{"tcp://mqtt:1883"}); //docker-compose
+        //tcp://127.0.0.1:1883 //localhost
+        options.setAutomaticReconnect(true); // Reconectar automaticamente
         options.setConnectionTimeout(10);
         factory.setConnectionOptions(options);
         return factory;
     }
 
+    // Canal de entrada
     @Bean
     public MessageChannel mqttInputChannel() {
         return new DirectChannel();
     }
 
+    // Configuração de recebimento de mensagens MQTT
     @Bean
     public MqttPahoMessageDrivenChannelAdapter inboundAdapter(MqttPahoClientFactory mqttClientFactory) {
-        String uniqueClientId = "middleware-subscriber-" + System.nanoTime();
+        String uniqueClientId = "middleware-subscriber-" + System.nanoTime(); // Identificador único
         MqttPahoMessageDrivenChannelAdapter adapter = new MqttPahoMessageDrivenChannelAdapter(
                 uniqueClientId,
                 mqttClientFactory,
-                "sensor/#"
+                "sensor/#" // recebe todas as mensagens de tópicos que começam com "sensor/"
         );
         adapter.setOutputChannel(mqttInputChannel());
         return adapter;
     }
 
+    // Configuração de recebimento de mensagens MQTT
     @Bean
     @ServiceActivator(inputChannel = "mqttInputChannel")
     public MessageHandler messageHandler(SensorEventService sensorEventService) {
@@ -68,10 +72,11 @@ public class MqttConfig {
     }
 
 
+    // Configuração de envio de mensagens MQTT
     @Bean
     @ServiceActivator(inputChannel = "mqttOutboundChannel")
     public MessageHandler mqttOutboundHandler(MqttPahoClientFactory mqttClientFactory) {
-        String uniqueClientId = "middleware-publisher-" + System.nanoTime();
+        String uniqueClientId = "middleware-publisher-" + System.nanoTime(); // publica mensagens com um identificador único
         MqttPahoMessageHandler handler = new MqttPahoMessageHandler(uniqueClientId, mqttClientFactory);
         handler.setAsync(true); // Envio assíncrono para melhorar desempenho
         handler.setDefaultTopic("actuator/commands");
@@ -80,7 +85,7 @@ public class MqttConfig {
         return handler;
     }
 
-
+    // Canal de saída para publicar mensagens no MQTT
     @Bean
     public MessageChannel mqttOutboundChannel() {
         return new DirectChannel();

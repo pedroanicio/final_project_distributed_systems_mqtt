@@ -1,6 +1,7 @@
 import hashlib #criar hashes para cada bloco
 import json # codificar e decodificar blocos quando carrega-los ou armazena-los em um file
 from time import time
+import schedule
 from urllib.parse import urlparse
 
 
@@ -39,8 +40,7 @@ class Blockchain:
             'sender': sender,
             'recipient':recipient,
             'amount': amount
-        })
-        
+        })        
         # Verifica se o número de transações é igual a 3
         if len(self.current_transactions) == 3:
             self.auto_mine()
@@ -123,7 +123,6 @@ class Blockchain:
         # implementada a logica do consenso 50% + 1
 
         neighbours = self.nodes
-        new_chain = None
         chain_votes = {}
 
         for node in neighbours:
@@ -140,7 +139,7 @@ class Blockchain:
                         if chain_hash not in chain_votes:
                             chain_votes[chain_hash] = {'votes': 0, 'chain': chain}
                         chain_votes[chain_hash]['votes'] += 1
-            
+
             except requests.exceptions.RequestException as e:
                 print(f"Erro ao conectar ao nó {node}: {e}")
         
