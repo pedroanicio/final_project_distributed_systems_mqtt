@@ -109,9 +109,10 @@ def consensus():
 
 if __name__ == '__main__':
 
-    #porta = int(os.environ.get('PORT', 5000))
+    porta = int(os.environ.get('PORT', 5000))
 
-    blockchain.register_node('5001')
-    blockchain.register_node('5002')
-    blockchain.register_node('5003')
-    app.run(host='0.0.0.0', port=5000)
+    blockchain.register_node('app1:5000')
+    blockchain.register_node('app2:5000')
+    blockchain.register_node('app3:5000')
+    blockchain.register_node('app4:5000')
+    app.run(host='0.0.0.0', port=porta)

@@ -2,23 +2,37 @@ version: '3.8'
 
 services:
   app1:
-    build: ./
+    build: backend/
     ports:
       - "5000:5000"
     networks:
       - blockchain_net
   
   app2:
-    build: ./
+    build: backend/
     ports:
       - "5001:5000"
     networks:
       - blockchain_net
   
   app3:
-    build: ./
+    build: backend/
     ports:
       - "5002:5000"
+    networks:
+      - blockchain_net
+  
+  app4:
+    build: backend/
+    ports:
+      - "5003:5000"
+    networks:
+      - blockchain_net
+
+  frontend:
+    build: ./frontend/blockchain-frontend
+    ports:
+      - "3000:80"
     networks:
       - blockchain_net
 

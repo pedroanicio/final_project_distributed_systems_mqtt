@@ -128,7 +128,7 @@ class Blockchain:
 
         for node in neighbours:
             try:
-                url = f'http://localhost:{node}/chain'  # Corrige para garantir a URL correta
+                url = f'http://{node}/chain'  # Corrige para garantir a URL correta
                 print(f"Consultando o nó: {url}")
                 response = requests.get(url)
 
