@@ -25,5 +25,9 @@ public class EventProcessor {
             actuatorCommandService.sendCommand("water_actuator", "ON", "");
         }
 
+        if (eventType.equals("high_temperature") && value.equalsIgnoreCase("detected")) {
+            actuatorCommandService.sendCommand("ligar ar condicionado", "ON","");
+        }
+
     }
 }

@@ -21,7 +21,7 @@ public class MqttConfig {
     public MqttPahoClientFactory mqttClientFactory() {
         DefaultMqttPahoClientFactory factory = new DefaultMqttPahoClientFactory(); // cria um cliente mqtt
         MqttConnectOptions options = new MqttConnectOptions(); // cria um objeto de configuração
-        options.setServerURIs(new String[]{"tcp://mqtt:1883"}); //docker-compose
+        options.setServerURIs(new String[]{"tcp://mqtt:1883"}); // emqx-brokerdocker-compose
         //tcp://127.0.0.1:1883 //localhost
         options.setAutomaticReconnect(true); // Reconectar automaticamente
         options.setConnectionTimeout(10);
@@ -42,7 +42,7 @@ public class MqttConfig {
         MqttPahoMessageDrivenChannelAdapter adapter = new MqttPahoMessageDrivenChannelAdapter(
                 uniqueClientId,
                 mqttClientFactory,
-                "sensor/#" // recebe todas as mensagens de tópicos que começam com "sensor/"
+                "$share/securityControllers/sensor/#" // recebe todas as mensagens de tópicos que começam com "sensor/"
         );
         adapter.setOutputChannel(mqttInputChannel());
         return adapter;

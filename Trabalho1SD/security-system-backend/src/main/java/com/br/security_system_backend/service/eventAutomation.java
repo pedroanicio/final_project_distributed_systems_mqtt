@@ -10,18 +10,4 @@ public class eventAutomation {
         this.sensorEventService = sensorEventService;
     }
 
-
-    @Scheduled(fixedRate = 1000)
-    public void sendEvent(){
-        int random = (int) (Math.random() * 10);
-
-        if (random == 1){
-            sensorEventService.saveEvent("sensorMovimento", "motion", "detected");
-        } else if (){
-            
-        }
-
-    }
-
-
 }

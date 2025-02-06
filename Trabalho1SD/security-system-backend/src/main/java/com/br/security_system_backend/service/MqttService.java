@@ -21,7 +21,6 @@ public class MqttService {
                     .setHeader("mqtt_topic", topic)
                     .build());
         } catch (Exception e) {
-            // Trate erros para evitar loops
             System.err.println("Failed to send MQTT command: " + e.getMessage());
         }
     }

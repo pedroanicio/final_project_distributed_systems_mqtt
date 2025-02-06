@@ -29,8 +29,8 @@ public class ActuatorCommandService {
         actuatorCommandRepository.save(command);
 
         // Publica no MQTT
-        String topic = "actuator/" + actuatorId;
-        mqttService.sendCommand(topic, parameters);
+        //String topic = "actuator/" + actuatorId;
+        //mqttService.sendCommand(topic, parameters);
 
         return command;
     }
