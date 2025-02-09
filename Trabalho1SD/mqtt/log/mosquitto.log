@@ -2909,3 +2909,101 @@
 1739062852: Client middleware-subscriber-1485814621613 disconnected.
 1739062861: mosquitto version 2.0.20 terminating
 1739062861: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1739068248: mosquitto version 2.0.20 starting
+1739068248: Config loaded from /mosquitto/config/mosquitto.conf.
+1739068248: Opening ipv4 listen socket on port 1883.
+1739068248: Opening ipv6 listen socket on port 1883.
+1739068248: mosquitto version 2.0.20 running
+1739068249: New connection from 172.21.0.1:54096 on port 1883.
+1739068249: New client connected from 172.21.0.1:54096 as auto-A8B49ACE-9190-2A99-9B4B-CBEEDE5D99E0 (p2, c1, k60).
+1739068278: New connection from 172.21.0.4:47192 on port 1883.
+1739068279: New connection from 172.21.0.5:49842 on port 1883.
+1739068279: New client connected from 172.21.0.4:47192 as middleware-subscriber-6913610711312 (p2, c1, k60).
+1739068279: New client connected from 172.21.0.5:49842 as middleware-subscriber-6914078054693 (p2, c1, k60).
+1739068454: New connection from 172.21.0.1:39160 on port 1883.
+1739068454: New client connected from 172.21.0.1:39160 as auto-17C71F3E-B4A8-7D42-AC67-E0B6E506CBBC (p2, c1, k60).
+1739068454: Client auto-17C71F3E-B4A8-7D42-AC67-E0B6E506CBBC disconnected.
+1739068454: New connection from 172.21.0.4:43688 on port 1883.
+1739068455: New client connected from 172.21.0.4:43688 as middleware-publisher-6913663719188 (p2, c1, k60).
+1739068682: Client middleware-subscriber-6914078054693 disconnected.
+1739068682: Client middleware-subscriber-6913610711312 disconnected.
+1739068687: Client middleware-publisher-6913663719188 disconnected.
+1739068691: mosquitto version 2.0.20 terminating
+1739068691: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1739110027: mosquitto version 2.0.20 starting
+1739110027: Config loaded from /mosquitto/config/mosquitto.conf.
+1739110027: Opening ipv4 listen socket on port 1883.
+1739110027: Opening ipv6 listen socket on port 1883.
+1739110027: mosquitto version 2.0.20 running
+1739110060: New connection from 172.21.0.4:50676 on port 1883.
+1739110060: New connection from 172.21.0.5:59994 on port 1883.
+1739110060: New client connected from 172.21.0.5:59994 as middleware-subscriber-902812196116 (p2, c1, k60).
+1739110060: New client connected from 172.21.0.4:50676 as middleware-subscriber-902768878469 (p2, c1, k60).
+1739110071: Client middleware-subscriber-902768878469 disconnected.
+1739110071: Client middleware-subscriber-902812196116 disconnected.
+1739110080: mosquitto version 2.0.20 terminating
+1739110080: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1739110282: mosquitto version 2.0.20 starting
+1739110282: Config loaded from /mosquitto/config/mosquitto.conf.
+1739110282: Opening ipv4 listen socket on port 1883.
+1739110282: Opening ipv6 listen socket on port 1883.
+1739110282: mosquitto version 2.0.20 running
+1739110326: New connection from 172.21.0.6:48936 on port 1883.
+1739110326: New client connected from 172.21.0.6:48936 as middleware-subscriber-1167010502675 (p2, c1, k60).
+1739110327: New connection from 172.21.0.7:51680 on port 1883.
+1739110327: New client connected from 172.21.0.7:51680 as middleware-subscriber-1168351014277 (p2, c1, k60).
+1739110547: New connection from 172.21.0.1:46084 on port 1883.
+1739110547: New client connected from 172.21.0.1:46084 as auto-2F89FDB6-2BD5-B640-C74C-B17D59B230F6 (p2, c1, k60).
+1739110547: Client auto-2F89FDB6-2BD5-B640-C74C-B17D59B230F6 disconnected.
+1739110547: New connection from 172.21.0.6:37084 on port 1883.
+1739110548: New client connected from 172.21.0.6:37084 as middleware-publisher-1167139589576 (p2, c1, k60).
+1739110743: Client middleware-subscriber-1167010502675 disconnected.
+1739110743: Client middleware-subscriber-1168351014277 disconnected.
+1739110748: Client middleware-publisher-1167139589576 disconnected.
+1739110752: mosquitto version 2.0.20 terminating
+1739110752: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1739112359: mosquitto version 2.0.20 starting
+1739112359: Config loaded from /mosquitto/config/mosquitto.conf.
+1739112359: Opening ipv4 listen socket on port 1883.
+1739112359: Opening ipv6 listen socket on port 1883.
+1739112359: mosquitto version 2.0.20 running
+1739112417: New connection from 172.21.0.1:57836 on port 1883.
+1739112417: New client connected from 172.21.0.1:57836 as auto-E43477B2-BBF3-F0A0-A0E8-7B728096DFBC (p2, c1, k60).
+1739112417: Client auto-E43477B2-BBF3-F0A0-A0E8-7B728096DFBC disconnected.
+1739112432: New connection from 172.21.0.6:34884 on port 1883.
+1739112433: New client connected from 172.21.0.6:34884 as middleware-subscriber-3275375196165 (p2, c1, k60).
+1739112433: New connection from 172.21.0.7:42692 on port 1883.
+1739112433: New client connected from 172.21.0.7:42692 as middleware-subscriber-3276608307916 (p2, c1, k60).
+1739112500: New connection from 172.21.0.1:55840 on port 1883.
+1739112500: New client connected from 172.21.0.1:55840 as auto-F0D6E315-E8C1-8825-709F-440AFECC807C (p2, c1, k60).
+1739112500: Client auto-F0D6E315-E8C1-8825-709F-440AFECC807C disconnected.
+1739112500: New connection from 172.21.0.6:53878 on port 1883.
+1739112500: New client connected from 172.21.0.6:53878 as middleware-publisher-3275433730597 (p2, c1, k60).
+1739112657: New connection from 172.21.0.1:34518 on port 1883.
+1739112657: New client connected from 172.21.0.1:34518 as auto-AA578D49-C01C-BAAE-EE71-93FB7655045F (p2, c1, k60).
+1739112657: Client auto-AA578D49-C01C-BAAE-EE71-93FB7655045F disconnected.
+1739112657: New connection from 172.21.0.7:36082 on port 1883.
+1739112658: New client connected from 172.21.0.7:36082 as middleware-publisher-3276679092648 (p2, c1, k60).
+1739112658: New connection from 172.21.0.1:34526 on port 1883.
+1739112658: New client connected from 172.21.0.1:34526 as auto-74EA9B1F-F9ED-F3CA-F6B2-289124E5C7B0 (p2, c1, k60).
+1739112658: Client auto-74EA9B1F-F9ED-F3CA-F6B2-289124E5C7B0 disconnected.
+1739112658: New connection from 172.21.0.1:52034 on port 1883.
+1739112658: New client connected from 172.21.0.1:52034 as auto-B5E90E24-CBCF-A3A6-59C9-8C2875DF80B6 (p2, c1, k60).
+1739112658: Client auto-B5E90E24-CBCF-A3A6-59C9-8C2875DF80B6 disconnected.
+1739114160: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1739115961: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1739117762: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1739119563: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1739135723: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1739135723: Client middleware-subscriber-3275375196165 has exceeded timeout, disconnecting.
+1739135723: Client middleware-subscriber-3276608307916 has exceeded timeout, disconnecting.
+1739135723: Client middleware-publisher-3275433730597 has exceeded timeout, disconnecting.
+1739135723: Client middleware-publisher-3276679092648 has exceeded timeout, disconnecting.
+1739135724: New connection from 172.21.0.7:41212 on port 1883.
+1739135724: New connection from 172.21.0.6:55900 on port 1883.
+1739135725: New client connected from 172.21.0.7:41212 as middleware-subscriber-3276608307916 (p2, c1, k60).
+1739135725: New client connected from 172.21.0.6:55900 as middleware-subscriber-3275375196165 (p2, c1, k60).
+1739135847: Client middleware-subscriber-3275375196165 disconnected.
+1739135847: Client middleware-subscriber-3276608307916 disconnected.
+1739135857: mosquitto version 2.0.20 terminating
+1739135857: Saving in-memory database to /mosquitto/data//mosquitto.db.

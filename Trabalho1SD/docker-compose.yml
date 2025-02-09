@@ -14,7 +14,7 @@ services:
       - app-network
 
 
-  cassandraDB:
+  cassandra-seed:
     image: cassandra:latest
     container_name: cassandra
     ports:
@@ -22,6 +22,8 @@ services:
     environment:
       - CASSANDRA_CLUSTER_NAME=SecurityCluster
       - CASSANDRA_NUM_TOKENS=256
+      - MAX_HEAP_SIZE=512M
+      - HEAP_NEWSIZE=128M
     volumes:
       - ./cassandra:/var/lib/cassandra
     networks:
@@ -32,6 +34,40 @@ services:
       timeout: 10s
       retries: 5
       start_period: 0s
+
+  cassandra-node1:
+    image: cassandra:latest
+    container_name: cassandra-node1
+    environment:
+      - CASSANDRA_CLUSTER_NAME=SecurityCluster
+      - CASSANDRA_NUM_TOKENS=256
+      - CASSANDRA_SEEDS=cassandra-seed
+      - MAX_HEAP_SIZE=512M
+      - HEAP_NEWSIZE=128M
+    volumes:
+      - ./cassandra-node1:/var/lib/cassandra
+    networks:
+      - app-network
+    depends_on:
+      cassandra-seed:
+        condition: service_healthy
+
+  cassandra-node2:
+    image: cassandra:latest
+    container_name: cassandra-node2
+    environment:
+      - CASSANDRA_CLUSTER_NAME=SecurityCluster
+      - CASSANDRA_NUM_TOKENS=256
+      - CASSANDRA_SEEDS=cassandra-seed
+      - MAX_HEAP_SIZE=512M
+      - HEAP_NEWSIZE=128M
+    volumes:
+      - ./cassandra-node2:/var/lib/cassandra
+    networks:
+      - app-network
+    depends_on:
+      cassandra-seed:
+        condition: service_healthy
 
   controller:
     image: pedroaniciodev/security-system-backend
@@ -49,8 +85,12 @@ services:
     depends_on:
       mqtt:
         condition: service_started
-      cassandraDB:
+      cassandra-seed:
         condition: service_healthy
+      cassandra-node1:
+        condition: service_started
+      cassandra-node2:
+        condition: service_started
     deploy:
       replicas: 2 # instancias do controller
       restart_policy:
