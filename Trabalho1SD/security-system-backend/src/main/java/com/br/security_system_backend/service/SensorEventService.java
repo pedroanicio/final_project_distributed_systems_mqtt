@@ -34,12 +34,6 @@ public class SensorEventService {
 
         eventProcessor.processSensorEvent(sensorId, eventType, value);
 
-        // Publica no MQTT
-        //String topic = "sensor/" + sensorId;
-        //String payload = "{\"origin\":\"middleware\", \"sensorData\":\"" + value + "\"}";
-        //mqttService.sendCommand(topic, payload);
-
-
         return event;
     }
 }

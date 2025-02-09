@@ -14,7 +14,7 @@ services:
       - app-network
 
 
-  cassandra:
+  cassandraDB:
     image: cassandra:latest
     container_name: cassandra
     ports:
@@ -32,7 +32,7 @@ services:
       timeout: 10s
       retries: 5
       start_period: 0s
-    
+
   controller:
     image: pedroaniciodev/security-system-backend
     build:
@@ -44,10 +44,12 @@ services:
       - SPRING_PROFILES_ACTIVE=prod
       - MQTT_BROKER_URL=tcp://mqtt:1883
       - CASSANDRA_HOST=cassandra
+      - MAX_HEAP_SIZE=512M
+      - HEAP_NEWSIZE=128M
     depends_on:
       mqtt:
         condition: service_started
-      cassandra:
+      cassandraDB:
         condition: service_healthy
     deploy:
       replicas: 2 # instancias do controller

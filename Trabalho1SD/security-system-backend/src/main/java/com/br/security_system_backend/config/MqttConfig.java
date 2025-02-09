@@ -79,7 +79,7 @@ public class MqttConfig {
         String uniqueClientId = "middleware-publisher-" + System.nanoTime(); // publica mensagens com um identificador único
         MqttPahoMessageHandler handler = new MqttPahoMessageHandler(uniqueClientId, mqttClientFactory);
         handler.setAsync(true); // Envio assíncrono para melhorar desempenho
-        handler.setDefaultTopic("actuator/commands");
+        //handler.setDefaultTopic("actuator/commands");
         handler.setCompletionTimeout(5000); // Timeout para envio
         handler.setDefaultQos(1); // QOS 1 (entregar pelo menos uma vez)
         return handler;
