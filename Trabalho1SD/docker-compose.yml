@@ -32,7 +32,7 @@ services:
       test: ["CMD-SHELL", "cqlsh -e 'describe keyspaces'"]
       interval: 10s
       timeout: 10s
-      retries: 5
+      retries: 10
       start_period: 0s
 
   cassandra-node1:
@@ -97,7 +97,6 @@ services:
         condition: on-failure
     networks:
       - app-network
-
 
 networks:
   app-network:
