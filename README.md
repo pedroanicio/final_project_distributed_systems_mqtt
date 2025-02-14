@@ -1,30 +1,41 @@
-# Relatório do trabalho final de Sistemas Distribuídos
+# Final Report on Distributed Systems Project
+## 1. Introduction
+This report aims to describe the development and operation of a middleware for mediating communication between sensors, actuators, and controllers using MQTT and Cassandra.
+The system was developed for a home automation environment, where sensors monitor machine conditions and actuators execute automatic commands.
 
-## 1. Introdução
-Este relatóro busca descrever o desenvolvimento e funcionamento de um middleware para intermediação entre sensores, atuadores e controladores utilizando MQTT e Cassandra.
-O sistema foi desenvolvido para um ambiente de automação residencial, onde sensores monitoram condições de máquinas e atuadores realizam comandos automáticos.
-## 2. Arquitetura do Sistema
-A solução foi projetada para intermediar a comunicação entre diferentes componenestes do sistema de orma eficiente e segura. O middleware utiliza o broker MQTT para transmissão de mensagens e o Cassandra para armazenamento de eventos e comandos.
-### 2.1 Intermediação com Sensores, Atuadores e Controladores
-* Sensores: Publicam eventos nos tópicos MQTT;
-* Atuadores: Assinam os tópicos MQTT para receber comandos e executar ações;
-* Controladores: Gerenciam as informações recebidas dos sensores, armazenam os eventos no banco de dados e tomam decisões baseadas nesses dados.
-### 2.2 Publicação de Tópicos pelos Sensores
-Os sensores capturam eventos do ambiente e publicam no broker MQTT. O middleware processa e encaminha essas mensagens para os componentes responśaveis, garantindo o fluxo contínuo de dados.
-### 2.3 Assinatura dos Tópicos pelos Atuadores
-Os atuadores assinam os tópicos MQTT para receber comandos enviados pelos controladores. Dessa forma, é possível automatizar processos com base nas condições registradas pelos sensores.
-### 2.4 Gerenciamento de Processos pelos Controladores
-Os controladores recebem os dados dos sensores e processam as informações para tomar as decisões corretas, acionando os atuadores específicos para aquela situação.
-### 2.5 Visualização e Controle do Sistema pelos Clientes
-Os eventos e comandos realizados pelos sensores e atuadores ficam armazenados num banco de dados compartilhado, permitindo o monitoramento em tempo real do funcionamento do sistema.
-### 2.6 Middleware como Intermediador da Comunicação
-O middleware atua como um intermediador entre os clientes e os processos do sistema. Ele garante a comunicação baseada em objetos, permitindo que os clientes acompanhem eventos em tempo real.
-## 3. Disponibilidade e Tolerância a Falhas
-### 3.1 Replicas para os Dados Armazenados
-O cassandra foi escolhido para garantir a alta disponibilidade dos dados. Ele distribui informações replicadas entre nós, prevenindo a perda de dados em caso de falha de um nó.
-### 3.2 Continuidade da Execução em Caso de Falha do Controlador
-O middleware garante que mesmo quando um controlador caia, o cliente continue recebendo respostas. Isso ocorre pois várias instâncias de um controller são executadas ao mesmo tempo, e se uma cair, a outra assume a função. Essa funcinalidade também assegura que nenhum controlador fique sobrecarregado.
-## 4. Segurança do Sistema
-Para evitar respostas incorretas por falha ou invasão, o middleware implementa verificações de consistência, que analisam padrões dos dados recebidos. Caso existam valores incoerentes, os dados são ignorados.
-## 5. Conclusão
-O middleware desenvolvido atende aos requisitos de um sistema distribuído de alta disponibilidade e segurança, garantindo comunicação confiável entre sensores, atuadores e controladores. Com a utilização do MQTT e Cassandra, o sistema é escalável e robusto, sendo adequado para aplicações de automação residencial.
+## 2. System Architecture
+The solution was designed to efficiently and securely mediate communication between different system components. The middleware utilizes an MQTT broker for message transmission and Cassandra for storing events and commands.
+
+### 2.1 Mediation with Sensors, Actuators, and Controllers
+Sensors: Publish events to MQTT topics;
+Actuators: Subscribe to MQTT topics to receive commands and execute actions;
+Controllers: Manage the information received from sensors, store events in the database, and make decisions based on this data.
+
+### 2.2 Topic Publication by Sensors
+Sensors capture environmental events and publish them to the MQTT broker. The middleware processes and forwards these messages to the responsible components, ensuring a continuous data flow.
+
+### 2.3 Topic Subscription by Actuators
+Actuators subscribe to MQTT topics to receive commands sent by controllers. This enables process automation based on the conditions recorded by the sensors.
+
+### 2.4 Process Management by Controllers
+Controllers receive data from sensors and process the information to make appropriate decisions, activating specific actuators for each situation.
+
+### 2.5 System Monitoring and Control by Clients
+Events and commands performed by sensors and actuators are stored in a shared database, allowing real-time monitoring of system operations.
+
+### 2.6 Middleware as a Communication Intermediary
+The middleware acts as an intermediary between clients and system processes. It ensures object-based communication, allowing clients to track events in real-time.
+
+## 3. Availability and Fault Tolerance
+### 3.1 Data Replication
+Cassandra was chosen to ensure high data availability. It distributes replicated information across nodes, preventing data loss in case of a node failure.
+
+### 3.2 Execution Continuity in Case of Controller Failure
+The middleware ensures that even if a controller fails, the client continues to receive responses. This is achieved by running multiple instances of a controller simultaneously, allowing one to take over if another fails. This feature also prevents any single controller from becoming overloaded.
+
+## 4. System Security
+To prevent incorrect responses due to failure or intrusion, the middleware implements consistency checks that analyze data patterns. If inconsistent values are detected, the data is ignored.
+
+## 5. Conclusion
+The developed middleware meets the requirements of a highly available and secure distributed system, ensuring reliable communication between sensors, actuators, and controllers. By utilizing MQTT and Cassandra, the system is scalable and robust, making it suitable for home automation applications.
+
