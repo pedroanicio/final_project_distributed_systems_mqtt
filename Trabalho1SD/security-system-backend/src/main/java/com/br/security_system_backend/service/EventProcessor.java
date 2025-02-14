@@ -22,12 +22,6 @@ public class EventProcessor {
                 }
                 break;
 
-            case "noisy":
-                if (value.equalsIgnoreCase("tooLoud")) {
-                    actuatorCommandService.sendCommand("sound_actuator", "reduce_noise", "");
-                }
-                break;
-
             case "smoke":
                 if (value.equalsIgnoreCase("detected")) {
                     actuatorCommandService.sendCommand("water_actuator", "ON", "");
@@ -37,12 +31,6 @@ public class EventProcessor {
             case "high_temperature":
                 if (value.equalsIgnoreCase("detected")) {
                     actuatorCommandService.sendCommand("air_conditioner_actuator", "ON", "16");
-                }
-                break;
-
-            case "low_temperature":
-                if (value.equalsIgnoreCase("detected")) {
-                    actuatorCommandService.sendCommand("heater_actuator", "ON", "28");
                 }
                 break;
 
@@ -56,13 +44,6 @@ public class EventProcessor {
             case "water_leak":
                 if (value.equalsIgnoreCase("detected")) {
                     actuatorCommandService.sendCommand("main_valve_actuator", "CLOSE", "");
-                }
-                break;
-
-            case "intrusion":
-                if (value.equalsIgnoreCase("detected")) {
-                    actuatorCommandService.sendCommand("lights_actuator", "FLASH", "");
-                    actuatorCommandService.sendCommand("alarm_actuator", "ON", "");
                 }
                 break;
 

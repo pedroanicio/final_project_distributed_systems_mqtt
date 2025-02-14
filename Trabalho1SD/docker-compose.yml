@@ -24,6 +24,9 @@ services:
       - CASSANDRA_NUM_TOKENS=256
       - MAX_HEAP_SIZE=512M
       - HEAP_NEWSIZE=128M
+      - CASSANDRA_DC=datacenter1
+      - CASSANDRA_RACK=rack1
+      - CASSANDRA_ENDPOINT_SNITCH=GossipingPropertyFileSnitch
     volumes:
       - ./cassandra:/var/lib/cassandra
     networks:
@@ -44,6 +47,9 @@ services:
       - CASSANDRA_SEEDS=cassandra-seed
       - MAX_HEAP_SIZE=512M
       - HEAP_NEWSIZE=128M
+      - CASSANDRA_DC=datacenter1
+      - CASSANDRA_RACK=rack1
+      - CASSANDRA_ENDPOINT_SNITCH=GossipingPropertyFileSnitch
     volumes:
       - ./cassandra-node1:/var/lib/cassandra
     networks:
@@ -61,6 +67,9 @@ services:
       - CASSANDRA_SEEDS=cassandra-seed
       - MAX_HEAP_SIZE=512M
       - HEAP_NEWSIZE=128M
+      - CASSANDRA_DC=datacenter1
+      - CASSANDRA_RACK=rack1
+      - CASSANDRA_ENDPOINT_SNITCH=GossipingPropertyFileSnitch
     volumes:
       - ./cassandra-node2:/var/lib/cassandra
     networks:

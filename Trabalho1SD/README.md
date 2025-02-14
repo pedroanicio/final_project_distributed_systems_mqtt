@@ -40,4 +40,7 @@ To prevent incorrect responses due to failure or intrusion, the middleware imple
 The developed middleware meets the requirements of a highly available and secure distributed system, ensuring reliable communication between sensors, actuators, and controllers. By utilizing MQTT and Cassandra, the system is scalable and robust, making it suitable for home automation applications.
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4e39f9df4445a90e2acb76fb81bdd2b5477d232b
