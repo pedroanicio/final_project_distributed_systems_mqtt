@@ -36,6 +36,93 @@ The middleware ensures that even if a controller fails, the client continues to 
 ## 4. System Security
 To prevent incorrect responses due to failure or intrusion, the middleware implements consistency checks that analyze data patterns. If inconsistent values are detected, the data is ignored.
 
-## 5. Conclusion
+## 5. How to Use
+### Prerequisites
+Before running the system, ensure you have:
+* Docker and Docker Compose installed
+* A stable internet connection to pull images
+### Setup & Run
+1. Clone the Repository:
+```
+git clone https://github.com/your-repo/security-system.git
+cd security-system
+```
+2.  Start the System
+Run the following command to start all services:
+```
+docker-compose up -d
+```
+This will initialize:
+✅ An MQTT broker (Eclipse Mosquitto)
+✅ A Cassandra database cluster (1 seed + 2 nodes)
+✅ The backend controller (Spring Boot application)
+
+3. Check Running Services
+To verify that all services are up, run
+```
+docker ps
+```
+4. Configuration
+* MQTT Broker: Available at tcp://localhost:1883
+* Cassandra: Connect via cqlsh localhost 9042
+* Backend API: Runs on http://localhost:8080 (Port range: 8080-8081)
+
+5. Stopping the System
+To stop all containers, run:
+```
+docker-compose down
+```
+### Accessing Services
+#### Accessing Cassandra
+1. Connect to the Cassandra database
+```
+docker exec -it cassandra cqlsh
+```
+2. List available keyspaces
+```
+DESCRIBE KEYSPACES;
+```
+3. Create a keyspace (if needed)
+```
+CREATE KEYSPACE security_system WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 1};
+```
+4. Use the keyspace
+```
+USE security_system;
+```
+5. Create a sample table (if needed)
+```
+CREATE TABLE sensor_events (
+  id UUID PRIMARY KEY,
+  sensor_id TEXT,
+  timestamp TIMESTAMP,
+  event_type TEXT,
+  value TEXT
+);
+
+CREATE TABLE actuator_commands (
+  id UUID PRIMARY KEY,
+  actuator_id TEXT,
+  timestamp TIMESTAMP,
+  command_type TEXT,
+  parameters TEXT
+);
+```
+6. Retrieve all records
+```
+SELECT * FROM sensor_events;
+SELECT * FROM actuator_commands;
+```
+#### Using MQTT
+1. Subscribe to a topic (listens for messages)
+```
+mosquitto_sub -h 127.0.0.1 -t "actuator/#"
+```
+2. Publish a message to a topic (examples)
+```
+mosquitto_pub -h 127.0.0.1 -t "sensor/sensorFumaca/smoke" -m "detected"
+mosquitto_pub -h 127.0.0.1 -t "sensor/sensorMovimento/motion" -m "detected"
+```
+## 6. Conclusion
 The developed middleware meets the requirements of a highly available and secure distributed system, ensuring reliable communication between sensors, actuators, and controllers. By utilizing MQTT and Cassandra, the system is scalable and robust, making it suitable for home automation applications.
 
